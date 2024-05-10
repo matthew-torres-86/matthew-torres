@@ -1,0 +1,155 @@
+
+/*Navigation Styles*/
+.container{
+  margin: 0;
+  background-color: #8c8c8c;
+}  
+.nav{
+    background-color: #03725B;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+
+  }
+  .logo{
+    width: 12%;
+    margin: 1.6em;
+    /* display: inline-block; */
+    padding: 0px;
+  }
+  .nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    vertical-align: top;
+  }
+  .nav li{
+    float: right; 
+    text-align: center;
+  }
+  .nav li a{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color:#fff;
+    transition: color 1s ease;
+    background-color: #03725B;
+  }
+
+  .nav li a.active{
+    color: #0BF8C6;
+  }
+
+  .nav li a:hover{
+    color: #0BF8C6;
+  } 
+
+/*Mobile friendly Nav*/
+  .fullnav ul{
+    display: inline-block;
+    width: 80%;
+    right: 0;
+  }
+
+  .mobilenav ul{
+    display: block;
+    width: 100%;
+  }
+
+  .fullnav li a{
+    font-size: 14pt;
+    /* width: fit-content; */
+    /* text-align: center; */
+    /* min-width: 180px; */
+  }
+
+  .mobilenav{
+    width: 98%;
+  }
+  .socials{
+    float: left;
+    margin-left: 5%;
+   display: flex;
+   width: 17%;
+}
+.socials a{
+    padding: 0;
+    margin: 0;
+}
+
+/*Dropdown*/
+.dropdown{
+  /* width: 25%; */
+  padding: 8px 5%;
+  text-align: left;
+  float: left;
+}
+  .dropdownContent{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    width: 25%;
+  }
+
+  .dropdown:hover .dropdownContent{
+    display: block;
+  } 
+
+/*Media Queries*/
+  /*Super Small screen sizes*/
+  @media screen and (max-width: 649px){
+    .mobilenav{
+      display: block;
+    }
+
+    .fullnav{
+      display: none;
+    }
+  }
+  /*Small screen sizes*/
+  @media screen and (max-width: 885px) and (min-width: 650px){
+    .mobilenav{
+      display: block;
+    }
+    .fullnav{
+      display: none;
+    }
+  }
+  /*mid-sized screens*/
+  @media screen and (min-width: 886px) and (max-width: 1170px) {
+    .mobilenav{
+      display: none;
+    }
+
+    .fullnav{
+      display: block;
+    }
+  }
+
+  /*Upper-mid screen sizes*/
+  @media screen and (min-width: 1171px) and (max-width: 1500px){
+    .mobilenav{
+      display: none;
+    }
+    
+    .fullnav{
+      display: block;
+    }
+
+  }
+
+  /*Large screen sizes*/
+  @media screen and (min-width: 1501px){
+    .mobilenav{
+      display: none;
+    }
+
+    .fullnav{
+      display: block;
+    }
+  }
+

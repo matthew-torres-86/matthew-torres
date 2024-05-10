@@ -1,0 +1,90 @@
+.projectsGallery{
+  background-color: #272466;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  vertical-align: middle;
+}
+
+.projectsGallery button{
+  height: 30px;
+  background: none;
+  border: none;
+}
+
+.card{
+  width: 80%;
+  margin: 2% 10%;
+  position: relative;
+  display: flex;
+}
+
+.preview{
+  width: 50%;
+  transition: width 1s ease;
+}
+
+.videoFull{
+  width: 100%;
+  transition: width 1s ease;
+}
+
+.info{
+  display: block;
+  padding-left: 5%;
+  overflow: hidden;
+  max-height: 30em;
+}
+
+.infoMinimized{
+  display: none;
+  padding-left: 5%;
+  overflow: hidden;
+  max-height: 30em;
+  text-wrap: nowrap;
+}
+
+.card video{
+  width:100%;
+}
+
+.info h2, .info p{
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  background: none;
+}
+
+.infoMinimized h2, .infoMinimized p{
+  width: 0;
+  overflow: hidden;
+  color: #fff;
+  background: none;
+  text-decoration: none;
+}
+
+.caption{
+  color: #8e8e8e;
+  font-size: 10px;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+
+.thumbnails{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-x: scroll;
+  height: 300px;
+}
+
+.thumbnails img{
+  height: 200px;
+  transition: height .5s ease;
+  padding-left: 50px;
+}
+
+.thumbnails img:hover{
+  height: 300px;
+}

@@ -1,0 +1,36 @@
+.categoriesGallery{
+  background-color: #272466;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+
+.card{
+  width: 33%;
+  margin: 2%;
+  position: relative;
+}
+
+.card a{
+  text-decoration: none;
+}
+
+.card img{
+  width:100%;
+}
+
+.card h3{
+  opacity: 0;
+  color: #fff;
+  background-color: #00000079;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  bottom: 5.5em;
+  transition: opacity .5s ease;
+}
+
+.card:hover h3{
+  opacity:1;
+}

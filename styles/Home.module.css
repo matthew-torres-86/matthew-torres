@@ -1,0 +1,86 @@
+
+@keyframes fade-left {
+  from {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes fade-right {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*Page cover photos and captions*/
+  .backgroundLayer {
+    display: inline-block; 
+    margin:0;
+    padding: 0;
+    top: 0;
+    z-index: 0;
+    background-color: #03725B;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .pageTitle {
+    animation: fade-left 1s ease;
+    float: left;
+    margin: 0;
+    left: 40px;
+    position: absolute;			
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2FF8C9;
+    padding-left: 5vw;
+    width: 80%;
+    font-size: 12.5vw;
+    text-shadow: 5px 5px 5px #333249;
+  }
+		
+  .headerImage{
+    animation: fade-right 1s ease;
+    float: right;
+    height: 80vh;
+    position: relative;
+    z-index: 3;
+    filter: drop-shadow(5px 5px 5px #333249)
+  }
+
+  .active{
+    display: block;
+    transform: translateX(0);
+  }
+
+  .references{
+    margin-top: -1em;
+    background-color: #272466;
+    height: 15em;
+    padding: 2%;
+    z-index: 5;
+  }
+  .references p{
+    color: #fff;
+    font-size: 24pt;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .bio{
+    padding: 5%;
+    background-color: #03725B;
+  }
+  .bio p{
+    color: white;
+  }

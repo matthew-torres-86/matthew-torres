@@ -1,0 +1,23 @@
+*{
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+p {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #000; 
+  line-height: 1.7;
+  /* margin: 20px; */
+}
+
+h2 {
+  font-size: 25pt;
+  color: #0BF8C6;
+  background-color: #03725B;
+  width: max-content;
+}
