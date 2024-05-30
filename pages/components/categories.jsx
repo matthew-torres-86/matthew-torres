@@ -1,6 +1,10 @@
 import styles from "@/styles/Categories.module.css";
 
 export default function Categories({data}){
+
+    if(data==null){
+        return(<p>Component Not Found</p>)
+    }
     return(
         <div className={styles.categoriesGallery}>
         {data.map((d)=>{
