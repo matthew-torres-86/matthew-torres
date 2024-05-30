@@ -7,14 +7,21 @@
 }
 
 .projectsGallery button{
-  height: 30px;
+  margin-top: 15%;
+  height: 8em;
   background: none;
   border: none;
+  border-radius: 1em;
+  padding: 2em;
+}
+
+.projectsGallery button:hover{
+  background: #01010177;
 }
 
 .card{
-  width: 80%;
-  margin: 2% 10%;
+  width: 100%;
+  /* padding: 2% 10%; */
   position: relative;
   display: flex;
 }
@@ -72,19 +79,23 @@
 }
 
 .thumbnails{
+  background-color: #272466;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
-  overflow-x: scroll;
-  height: 300px;
+  /* overflow-x: scroll; */
+  overflow-y: hidden;
+  height: fit-content;
 }
 
 .thumbnails img{
-  height: 200px;
+  height: 15em;
   transition: height .5s ease;
   padding-left: 50px;
+  padding-top: 20px;
 }
 
 .thumbnails img:hover{
-  height: 300px;
+  height: 20em;
 }

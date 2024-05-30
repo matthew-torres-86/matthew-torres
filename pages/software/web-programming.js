@@ -7,7 +7,10 @@ import Footer from "../components/footer";
 
 const data =
 [
-  {name:"KeepMassBeautiful", video:"/none", title: "Home Page",caption: "", date:"December 2021 - March 2022", org: "Tufts' Department of Theater, Dance, and Performance Studies", descr:"Matthew's first collegiate music directorship", thumbnail: "/KMB.png"},
+  {name:"KeepMassBeautiful", title: "Home Page", site:"https://keep-mass-beautiful.vercel.app/Boston", thumbnail: "/KMB.png"},
+  {name:"KeepMassBeautiful", title: "About Page",site:"https://keep-mass-beautiful.vercel.app/Boston/about"},
+  {name:"KeepMassBeautiful", title: "Contact Page",site:"https://keep-mass-beautiful.vercel.app/Boston/contact"},
+  {name:"KeepMassBeautiful", title: "Events Page",site:"https://keep-mass-beautiful.vercel.app/Boston/events"},
 ]
 
 export default function MusicDirector() {
@@ -24,8 +27,8 @@ export default function MusicDirector() {
   return (
     <>
       <Head>
-        <title>Music | Matthew Torres</title>
-        <meta name="description" content="Matthew Torres Music Portfolio" />
+        <title>Software | Matthew Torres</title>
+        <meta name="description" content="Matthew Torres Software Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

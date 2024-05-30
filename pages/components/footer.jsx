@@ -3,7 +3,7 @@ export default function Footer(){
     return(
     <footer>
         <div className={styles.copyright}>
-            &copy; Matthew Torres. 2023
+            Built from scratch using Next.js. &copy; Matthew Torres. 2023
         </div>
     </footer>)
 }

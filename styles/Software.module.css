@@ -62,25 +62,38 @@
     display: block;
     transform: translateX(0);
   }
+ 
+  .projectsGallery button{
+    margin-top: 30%;
+    height: 30px;
+    background: none;
+    border: none;
+  }
 
-  .references{
+  .projectsOverview{
     margin-top: -1em;
     background-color: #272466;
-    height: 15em;
+    height: fit-content;
     padding: 2%;
     z-index: 5;
   }
-  .references p{
-    color: #fff;
-    font-size: 24pt;
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
+
+  .projectsDetail{
+    margin-top: -1em;
+    background-color: #272466;
+    height: fit-content;
+    padding: 2%;
+    z-index: 5;
   }
-  .bio{
-    padding: 5%;
-    background-color: #03725B;
+  .resume{
+    margin-top: -2em;
+    padding-left: 2em;
+    height: 65em;
+    background-color: #272466;
   }
-  .bio p{
-    color: white;
+
+  .resume object{
+    width: 50%;
+    height: 60em;
+    margin-left: 25%;
   }

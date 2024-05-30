@@ -18,6 +18,9 @@ p {
 h2 {
   font-size: 25pt;
   color: #0BF8C6;
-  background-color: #03725B;
   width: max-content;
+}
+
+a{
+  text-decoration: none;
 }

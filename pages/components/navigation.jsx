@@ -14,17 +14,17 @@ export default function Navigation({active}){
             <li className = {styles.dropdown}>
                 <a href="/music">MUSICIAN</a>
                 <div className={styles.dropdownContent}>
-                    {/* <a href="web">Web Programming</a>
-                    <a href="c">C Languages</a>
-                    <a href="python">Python</a> */}
+                    <a href="/music/music-director">Music Director</a>
+                    <a href="/music/pianist">Pianist</a>
+                    <a href="/music/organist">Organist</a>
                 </div>
             </li>
             <li className = {styles.dropdown}>
                 <a href="/software">SOFTWARE DEVELOPER</a>
                 <div className={styles.dropdownContent}>
-                    {/* <a href="web">Web Programming</a>
-                    <a href="c">C Languages</a>
-                    <a href="python">Python</a> */}
+                    <a href="/software/web-programming">Web Programming</a>
+                    <a href="/software/c">C Languages</a>
+                    <a href="/software/python">Python</a>
                 </div>
             </li>
     </ul>

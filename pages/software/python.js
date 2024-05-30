@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 
 const data =
 [
-  {name:"CropImage", video:"/none", title: "CropImage.py", caption: "", date:"December 2021 - March 2022", org: "Draper Inc.", descr:"", thumbnail: "/draper.jpeg"}
+  {name:"CropImage", title: "CropImage.py", caption: "", date:"December 2021 - March 2022", org: "Draper Inc.", descr:"", thumbnail: "/draper.jpeg"}
 ]
 
 export default function Pianist() {
@@ -24,8 +24,8 @@ export default function Pianist() {
   return (
     <>
       <Head>
-        <title>Music | Matthew Torres</title>
-        <meta name="description" content="Matthew Torres Music Portfolio" />
+      <title>Software | Matthew Torres</title>
+        <meta name="description" content="Matthew Torres Software Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

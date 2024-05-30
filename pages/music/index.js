@@ -10,7 +10,7 @@ const data =
 [
   {name:"Music Director", image:"test.jpg", link:"./music/music-director"},
   {name:"Pianist", image:"piano.JPG", link:"./music/pianist"},
-  {name:"Organist", image:"test.jpg", link:"./music/organist"},
+  {name:"Organist", image:"Organist.png", link:"./music/organist"},
 ]
 
 export default function Home() {

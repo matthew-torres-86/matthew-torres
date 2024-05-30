@@ -66,7 +66,7 @@
   .references{
     margin-top: -1em;
     background-color: #272466;
-    height: 15em;
+    min-height: 20em;
     padding: 2%;
     z-index: 5;
   }

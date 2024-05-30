@@ -10,8 +10,12 @@ const REFERENCES =
   {quote:"Testing a second quote", author:"The Tufts Daily"},
   {quote:"Testing a third quote", author:"The Tufts Daily"}
 ]
-const BIO = "Matthew Torres is a recent graduate of Tufts University, in Meford, MA. "
+const BIO = 
 
+<><p>Matthew Torres is a multi-faceted Software Engineer and Musician who holds a Bachelor's degree in Computer Science and Music from <a href="https://tufts.edu" target="_blank">Tufts University</a>. As a student in the <a href="https://engineering.tufts.edu/cs/" target="_blank">Tufts Department of Computer Science</a>, he served as an undergraduate teaching assistant for Web Programming (CS20), where he helped hundreds of students each year learn frontend and backend development techniques as well as simple database infrastructure. He went on to become a tech lead for <a href="https://jumbocode.org/" target="_blank">Jumbocode</a>, a student organization which delivers software projects to non-profit organizations. He applied skills learned through his studies as a two-summer intern at <a href="https://draper.com/" target="_blank">Draper</a>, where he delivered a dozen new features and improvements to Draper's Enterprise Software. To learn more about Matthew's Software Engineering work, view his <a href="/software">software portfolio</a>.</p>
+  
+  <p>Matthew is also an accomplished pianist, organist, music director, and composer. He served as Interim Organist and Choir Director at the <a href="https://uccgrafton.org" target="_blank">Congregational Church of Grafton (UCC)</a>, and has performed as an organist at the <a href="https://bcg1800.org" target="_blank">Baptist Church of Grafton</a> as well as <a href="https://chaplaincy.tufts.edu/" target="_blank">Tufts' Goddard Chapel</a>, and as a pianist at <a href="https://as.tufts.edu/music/" target="_blank">Tufts' Distler Hall</a> and countless other venues around Massachusetts. He has music directed seven theatrical productions, including Spring Awakening, Into the Woods, and Twelfth Night among others. He was also the President and Director of the  <a href="https://www.instagram.com/tuftsfreshman15/" target="_blank"></a>Tufts' Freshman 15 Jazz Big Band. To see Matthew's musical work, view his <a href="/music" target="_blank">music portfolio</a>.</p>
+</>
 function reveal() {
   var reveals = document.querySelectorAll(`.${styles.headerImage}, .${styles.pageTitle}`);
   console.log(reveals);
@@ -60,7 +64,7 @@ export default function Home() {
       </div>
       <div className={styles.bio}>
         <h2>Bio</h2>
-        <p>{BIO}</p>
+        {BIO}
     </div>
     </body>
     <Footer></Footer>

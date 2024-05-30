@@ -7,8 +7,9 @@ import Footer from "../components/footer";
 
 const data =
 [
-  {name:"MetroSim", video:"/PurpleSummer.mov", title: "Song of Purple Summer",caption: "Video Credit: Amelia Estrada. I do not own the rights to this song. This production was in partnership with MTI, with video for portfolio purposes only.", date:"December 2021 - March 2022", org: "Tufts' Department of Theater, Dance, and Performance Studies", descr:"Matthew's first collegiate music directorship"},
-  {name:"Six Degrees", video:"/DontDoSadness.mov", title: "Don't Do Sadness/Blue Wind",caption: "Video Credit: Amelia Estrada. I do not own the rights to this song. This production was in partnership with MTI, with video for portfolio purposes only.", date:"December 2021 - March 2022", org: "Tufts' Department of Theater, Dance, and Performance Studies", descr:"Matthew's first collegiate music directorship"},
+  {name:"CharLinkedList/CharArrayList", code:"https://gist.github.com/matthew-torres-86/b7dc5e02f692ba583abbbf59779439ce.js", title: "CharLinkedList/CharArrayList",caption: "Author: Matthew Torres. DO NOT REPRODUCE", date:"March 2021", org: "Tufts' CS15: Data Structures and Algorithms", descr:"A C++ program that explores the performance of different string implementations",  thumbnail:"/ArrayListLinkedList.png"},
+  {name:"MetroSim", code:"https://gist.github.com/matthew-torres-86/5c06537f938d4f4885b9cb8622807826.js", title: "MetroSim",caption: "Author: Matthew Torres. DO NOT REPRODUCE", date:"March 2021", org: "Tufts' CS15: Data Structures and Algorithms", descr:"A C++ program that uses data structures to simulate the operation of a train", thumbnail:"/metrosim.jpg"},
+  {name:"Six Degrees", code:"", title: "MetroSim",caption: "Author: Matthew Torres. DO NOT REPRODUCE", date:"March 2021", org: "Tufts' CS15: Data Structures and Algorithms", descr:"A C++ program that uses data structures to simulate the operation of a train"},
 ]
 
 export default function Pianist() {
