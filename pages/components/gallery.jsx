@@ -6,6 +6,9 @@ import Frame from 'react-frame-component';
 export default function Categories({data}){
     const [index, setIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
+    if(data==null){
+        return(<p>Component Not Found</p>)
+    }
     var selectedCard = data[index]
     var numCards = data.length
 
