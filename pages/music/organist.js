@@ -7,14 +7,11 @@ import Footer from "../components/footer";
 
 const data =
 [
-  {name:"Spring Awakening", video:"/PurpleSummer.mov", title: "Song of Purple Summer",caption: "Video Credit: Amelia Estrada. I do not own the rights to this song. This production was in partnership with MTI, with video for portfolio purposes only.", date:"December 2021 - March 2022", org: "Tufts' Department of Theater, Dance, and Performance Studies", descr:"Matthew's first collegiate music directorship"},
-  {name:"Spring Awakening", video:"/DontDoSadness.mov", title: "Don't Do Sadness/Blue Wind",caption: "Video Credit: Amelia Estrada. I do not own the rights to this song. This production was in partnership with MTI, with video for portfolio purposes only.", date:"December 2021 - March 2022", org: "Tufts' Department of Theater, Dance, and Performance Studies", descr:"Matthew's first collegiate music directorship"},
-  {name:"Into The Woods", video:"/IntoTheWoods.mov", title: "Finale",caption: "Video Credit: Thomas Grant. I do not own the rights to this song. This production was in partnership with MTI, with video for portfolio purposes only.", date:"September 2022 - December 2022", org: "Tufts' Torn Ticket II", descr:"This fantastic production..."},
-  {name:"Little Women", video:"/none", title: "Finale",caption: "I do not own the rights to this song. This production was in partnership with MTI, with video for portfolio purposes only.", date:"April 2023", org: "Tufts' Torn Ticket II", descr:"This fantastic production..."},
-  {name:"Freshman 15", video:"/none", title: "Finale", caption: "", date:"April 2024", org: "Tufts' Freshman 15 Jazz Ensemble", descr:""},
+  {name:"Coming Soon", title: "Organist Videos Coming Soon"},
+
 ]
 
-export default function Pianist() {
+export default function Organist() {
   const [hydrated, setHydrated] = useState(false);
   
   useEffect(() => {
