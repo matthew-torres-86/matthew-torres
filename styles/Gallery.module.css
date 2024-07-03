@@ -1,7 +1,20 @@
+.scroller{
+    height: 85vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    z-index: 8;
+    position: fixed;
+    width: 100%;
+    background-color: #272466;
+    left: 0;
+}
+
 .projectsGallery{
+  scroll-snap-align: start;
   background-color: #272466;
   width: 100%;
-  height: fit-content;
+  height: 85vh;
+  position: relative;
   display: flex;
   vertical-align: middle;
 }
@@ -21,30 +34,69 @@
 
 .card{
   width: 100%;
-  /* padding: 2% 10%; */
   position: relative;
   display: flex;
+  scroll-snap-align: top;
 }
 
 .preview{
   width: 50%;
-  transition: width 1s ease;
+  height: 60vh;
+  margin-top: 10vh;
+  transition: all 1s ease;
+  transition-delay: 0.5s;
 }
 
 .videoFull{
   width: 100%;
-  transition: width 1s ease;
+  height: 75vh;
+  transition: all 1s ease;
+  transition-delay: 0.5s;
 }
 
+.laptop{
+  position: relative;
+  height: 100%;
+  transition: width 1s ease;
+  transition: height 1s ease;
+  transition-delay: 0.5s;
+  /* background: url(../public/laptop-frame.png) center center no-repeat; */
+  /* background-size: contain; */
+  /* width: fit-content;
+  height: fit-content; */
+  /* padding: 2vh 10vw 8vh 10vw; */
+}
+.laptop img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.laptop iframe{
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  height: 80%;
+  margin-top: 2vh;
+  z-index: 4;
+}
+
+
 .info{
-  display: block;
+  margin-top: 10vh;
+  opacity: 1;
   padding-left: 5%;
   overflow: hidden;
   max-height: 30em;
+  transition: all 1s ease;
+  transition-delay: 0.5s;
 }
 
 .infoMinimized{
-  display: none;
+  opacity: 0;
+  transition: all 1s ease;
+  transition-delay: 0.5s;
   padding-left: 5%;
   overflow: hidden;
   max-height: 30em;
@@ -60,10 +112,14 @@
   text-decoration: none;
   position: relative;
   background: none;
+  transition: all 1s ease;
+  transition-delay: 0.5s;
 }
 
 .infoMinimized h2, .infoMinimized p{
   width: 0;
+  transition: all 1s ease;
+  transition-delay: 0.5s;
   overflow: hidden;
   color: #fff;
   background: none;
@@ -78,6 +134,14 @@
   z-index: 2;
 }
 
+.browse{
+  scroll-snap-align: start;
+  height: 80vh;
+}
+.browse h2{
+  margin-left: 1em;
+}
+
 .thumbnails{
   background-color: #272466;
   display: flex;
@@ -86,7 +150,6 @@
   align-items: center;
   /* overflow-x: scroll; */
   overflow-y: hidden;
-  height: fit-content;
 }
 
 .thumbnails img{

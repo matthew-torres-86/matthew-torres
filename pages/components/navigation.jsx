@@ -6,7 +6,8 @@ export default function Navigation({active}){
         <a href = "/"><img className = {styles.logo} src="/logo.png"/></a>
         <ul>
             <li className={styles.socials}>
-                <a href="https://www.linkedin.com/in/matthew-r-torres/" target="_blank"><img src="/icons/linkedin.png" width="40px"/></a>
+                <a href="https://www.linkedin.com/in/matthew-r-torres/" target="_blank"><img src="/icons/Linkedin.png" width="40px"/></a>
+                <a href="https://github.com/matthew-torres-86" target="_blank"><img src="/icons/github.png" width="40px"/></a>
                 <a href="https://www.facebook.com/profile.php?id=100041754421410" target="_blank"><img src="/icons/facebook.png" width="40px"/></a>
                 <a href="https://www.instagram.com/matt.torres_86/" target="_blank"><img src="/icons/instagram.png" width="40px"/></a>
                 <a href="https://twitter.com/Matttorres2020" target="_blank"><img src="/icons/twitter.png" width="40px"/></a>

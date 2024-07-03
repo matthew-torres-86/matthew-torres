@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import { CopyBlock, dracula } from 'react-code-blocks';
 import Frame from 'react-frame-component';
 
-export default function Categories({data}){
+export default function Gallery({data}){
     const [index, setIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
     if(data==null){
@@ -49,7 +49,7 @@ export default function Categories({data}){
 
     beginNewTimerInterval(moveNext)
     return(
-        <>
+        <div className={styles.scroller}>
             <div className={styles.projectsGallery}>
                 <button onClick={backButton}><img src="/icons/chevron-left-solid.svg"></img></button>
                 <div className={styles.card}>
@@ -58,12 +58,16 @@ export default function Categories({data}){
                                 <video onPlay={()=>setIsPlaying(true)} onPause={()=>setIsPlaying(false)} src={selectedCard.video} controls/> 
                             }
                             {selectedCard.code && 
+                                
                                 <Frame style={{ width: '100%', height: '100%' }}
                                     initialContent={`<!DOCTYPE html><html><head></head><body><script src="${selectedCard.code}"></script></body></html>`}
                                 ></Frame>
                             }
                             {selectedCard.site && 
-                                <iframe src={selectedCard.site} style={{ width: '100%', height: '100%' }}></iframe>
+                                <div className={styles.laptop} onMouseEnter={()=>setIsPlaying(true)} onMouseLeave={()=>setIsPlaying(false)}>
+                                    <img src="/laptop-frame.png"></img>
+                                <iframe src={selectedCard.site} ></iframe>
+                                </div>
                             }
                             <p className={styles.caption}>{selectedCard.caption}</p>
                         </div>
@@ -77,15 +81,17 @@ export default function Categories({data}){
                 </div>
                 <button onClick={nextButton}><img src="/icons/chevron-right-solid.svg"></img></button>
             </div>
-            <h2>Browse by project:</h2>
-            <div className={styles.thumbnails}>
-                
-                {data.map((d, i)=>
-                    {if(d.thumbnail)
-                        return <img src={d.thumbnail} onClick={()=>{setIndex(i); beginNewTimerInterval(moveNext); setIsPlaying(false)}}></img>
-                    }
-                )}
+            <div className = {styles.browse}>
+                <h2>Browse by project:</h2>
+                <div className={styles.thumbnails}>
+                    
+                    {data.map((d, i)=>
+                        {if(d.thumbnail)
+                            return <img src={d.thumbnail} onClick={()=>{setIndex(i); beginNewTimerInterval(moveNext); setIsPlaying(false)}}></img>
+                        }
+                    )}
+                </div>
             </div>
-        </>
+        </div>
     )
 }

@@ -34,6 +34,7 @@ export default function Home() {
       </Head>
       <Navigation></Navigation>
     <body>
+      <div className={styles.scroller}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="conducting.png"/>
           <h1 className={styles.pageTitle}>Musician</h1>
@@ -42,6 +43,7 @@ export default function Home() {
         <Categories data={data}></Categories>
       </div>
       <Footer></Footer>
+      </div>
     </body>
     </>
   );

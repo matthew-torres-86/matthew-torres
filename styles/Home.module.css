@@ -21,17 +21,27 @@
     transform: translateX(0);
   }
 }
-
+  .scroller{
+    height: 85vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    z-index: 8;
+    position: fixed;
+    background-color: #03725B;
+  }
 /*Page cover photos and captions*/
   .backgroundLayer {
+    scroll-snap-align: start;
     display: inline-block; 
-    margin:0;
+    /* position:relative; */
+    margin: 0;
     padding: 0;
     top: 0;
     z-index: 0;
     background-color: #03725B;
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
+    height: 85vh;
   }
 
   .pageTitle {
@@ -44,6 +54,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #2FF8C9;
     padding-left: 5vw;
+    padding-top: 5vh;
     width: 80%;
     font-size: 12.5vw;
     text-shadow: 5px 5px 5px #333249;
@@ -52,7 +63,7 @@
   .headerImage{
     animation: fade-right 1s ease;
     float: right;
-    height: 80vh;
+    height: 85vh;
     position: relative;
     z-index: 3;
     filter: drop-shadow(5px 5px 5px #333249)
@@ -63,7 +74,7 @@
     transform: translateX(0);
   }
 
-  .references{
+  /* .references{
     margin-top: -1em;
     background-color: #272466;
     min-height: 20em;
@@ -76,11 +87,47 @@
     width: 80%;
     margin-left: 10%;
     text-align: center;
-  }
+  } */
   .bio{
     padding: 5%;
-    background-color: #03725B;
+    /* margin-top: -1em; */
+    background-color: #272466;
+    height: 85vh;
+    scroll-snap-align: start;
   }
   .bio p{
+    /* animation: fade-right 1s ease; */
+    opacity: 0;
     color: white;
+    transition: opacity 1s ease-in;
   }
+  .bio.active p{
+    opacity: 1;
+  }
+
+
+  .bio a{
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .resume{
+    scroll-snap-align: start;
+    padding-left: 5%;
+    height: 80vh;
+    background-color: #03725B;
+  }
+
+  .pdf{
+    width: 50%;
+    height: 70vh;
+    margin-left: 25%;
+    opacity: 0;
+    transition: opacity 1s ease-in;
+  }
+
+  .pdf.active{
+    opacity: 1;
+  }
+

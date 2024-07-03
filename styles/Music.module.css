@@ -21,9 +21,17 @@
     transform: translateX(0);
   }
 }
-
+.scroller{
+  height: 85vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  z-index: 8;
+  position: fixed;
+  background-color: #03725B;
+}
 /*Page cover photos and captions*/
   .backgroundLayer {
+    scroll-snap-align: start;
     display: inline-block; 
     margin:0;
     padding: 0;
@@ -31,8 +39,7 @@
     z-index: 0;
     background-color: #03725B;
     width: 100%;
-    height: fit-content
-    ;
+    height: 85vh;
   }
 
   .pageTitle {
@@ -62,7 +69,7 @@
   .headerImage{
     animation: fade-right 1s ease;
     float: right;
-    height: 80vh;
+    height: 85vh;
     position: relative;
     z-index: 3;
     filter: drop-shadow(5px 5px 5px #333249)
@@ -74,9 +81,10 @@
   }
 
   .projectsOverview{
-    margin-top: -1em;
+    scroll-snap-align: start;
+    height: 85vh;
     background-color: #272466;
-    height: fit-content;
+    overflow-x: hidden;
     padding: 2%;
     z-index: 5;
   }

@@ -25,7 +25,7 @@ function reveal() {
   }
 }
 
-export default function Home() {
+export default function Software() {
   const [hydrated, setHydrated] = useState(false);
 
   useEffect(() => {
@@ -48,6 +48,7 @@ export default function Home() {
       </Head>
       <Navigation active={1}></Navigation>
     <body>
+    <div className={styles.scroller}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="cs.png"/>
           <h1 className={styles.pageTitle}>Software Developer</h1>
@@ -55,9 +56,6 @@ export default function Home() {
       <div className={styles.projectsOverview}>
         <Categories data={data}></Categories>
       </div>
-      <div className={styles.resume}>
-        <h2>View Resume</h2>
-        <object data="Matthew Torres Resume.pdf" type="application/pdf"></object>
       </div>
     </body>
     <Footer></Footer>

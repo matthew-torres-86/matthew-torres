@@ -1,22 +1,27 @@
 .categoriesGallery{
   background-color: #272466;
-  width: 100%;
+  width: 100vw;
+  left: 0;
+  margin-left: 0;
   height: fit-content;
   display: flex;
 }
 
 .card{
-  width: 33%;
+  height: 42vh;
+  max-width: 28%;
+  overflow: hidden;
   margin: 2%;
   position: relative;
 }
 
 .card a{
   text-decoration: none;
+  width: fit-content;
 }
 
 .card img{
-  width:100%;
+  height: 100%;
 }
 
 .card h3{
