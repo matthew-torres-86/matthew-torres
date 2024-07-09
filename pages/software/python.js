@@ -7,7 +7,8 @@ import Footer from "../components/footer";
 
 const data =
 [
-  {name:"CropImage", title: "CropImage.py", caption: "", date:"December 2021 - March 2022", org: "Draper Inc.", descr:"", thumbnail: "/draper.jpeg"}
+  {name:"CropImage", title: "CropImage.py", caption: "This project is proprietary and cannot be disclosed. For questions, please contact Matt", date:"May 2022 - June 2023", org: "Draper Inc.", descr:"This project interfaces Draper's enterprise tools, and process employee ID photos to meet the required image specifications of each tool", thumbnail: "/draper.jpeg"},
+  {name:"PropertyScan", title: "PropertyScan.py", caption: "This project is proprietary and cannot be disclosed. For questions, please contact Matt", date:"August 2023", org: "Draper Inc.", descr:"This project processes data from handheld scanners to help maintain Draper's Asset Management Records", thumbnail: "/draper.jpeg"}
 ]
 
 export default function Pianist() {
