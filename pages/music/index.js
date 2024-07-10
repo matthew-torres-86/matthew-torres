@@ -40,6 +40,7 @@ export default function Home() {
           <h1 className={styles.pageTitle}>Musician</h1>
       </div>
       <div className={styles.projectsOverview}>
+      <h2>Projects</h2>
         <Categories data={data}></Categories>
       </div>
       <Footer></Footer>

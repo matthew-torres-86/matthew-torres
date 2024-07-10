@@ -33,7 +33,7 @@
   .backgroundLayer {
     scroll-snap-align: start;
     display: inline-block; 
-    /* position:relative; */
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     top: 0;
@@ -56,8 +56,23 @@
     padding-left: 5vw;
     padding-top: 5vh;
     width: 80%;
-    font-size: 12.5vw;
+    font-size: 12vw;
     text-shadow: 5px 5px 5px #333249;
+  }
+  .pageSubtitle {
+    animation: fade-left 1s ease;
+    float: left;
+    margin: 0;
+    left: 40px;
+    position: absolute;			
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    padding-left: 8vw;
+    padding-top: 65vh;
+    width: 80%;
+    font-size: 2vw;
+    /* text-shadow: 5px 5px 5px #333249; */
   }
 		
   .headerImage{
@@ -90,21 +105,28 @@
   } */
   .bio{
     padding: 5%;
-    /* margin-top: -1em; */
+    gap: 5%;
+    display: flex;
     background-color: #272466;
     height: 85vh;
     scroll-snap-align: start;
   }
-  .bio p{
+  .biotext{
     /* animation: fade-right 1s ease; */
+    margin-top: 10vh;
     opacity: 0;
-    color: white;
     transition: opacity 1s ease-in;
   }
-  .bio.active p{
+  .bio p{
+    color: #fff;
+  }
+  .biotext.active{
     opacity: 1;
   }
-
+  .bio img{
+    margin-top: 5vh;
+    height: 60%;
+  }
 
   .bio a{
     color: white;

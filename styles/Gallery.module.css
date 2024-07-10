@@ -84,11 +84,12 @@
 
 
 .info{
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
   opacity: 1;
-  padding-left: 5%;
+  padding: 5%;
   overflow: hidden;
   max-height: 30em;
+  max-width: 50%;
   transition: all 1s ease;
   transition-delay: 0.5s;
 }

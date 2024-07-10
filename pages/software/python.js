@@ -7,8 +7,10 @@ import Footer from "../components/footer";
 
 const data =
 [
+  {name:"Network Sniffer", title: "Alert.py", descr: "A python application which uses the Scapy module to sniff network packets for threats", date:"March 2023", org: "Tufts Intro to Security", code:"https://gist.github.com/matthew-torres-86/e70464b72c04790e5ddaaa02f67d09f0.js"},
   {name:"CropImage", title: "CropImage.py", caption: "This project is proprietary and cannot be disclosed. For questions, please contact Matt", date:"May 2022 - June 2023", org: "Draper Inc.", descr:"This project interfaces Draper's enterprise tools, and process employee ID photos to meet the required image specifications of each tool", thumbnail: "/draper.jpeg"},
-  {name:"PropertyScan", title: "PropertyScan.py", caption: "This project is proprietary and cannot be disclosed. For questions, please contact Matt", date:"August 2023", org: "Draper Inc.", descr:"This project processes data from handheld scanners to help maintain Draper's Asset Management Records", thumbnail: "/draper.jpeg"}
+  {name:"PropertyScan", title: "PropertyScan.py", caption: "This project is proprietary and cannot be disclosed. For questions, please contact Matt", date:"August 2023", org: "Draper Inc.", descr:"This project processes data from handheld scanners to help maintain Draper's Asset Management Records"}
+
 ]
 
 export default function Pianist() {

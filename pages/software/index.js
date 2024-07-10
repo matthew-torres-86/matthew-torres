@@ -54,6 +54,7 @@ export default function Software() {
           <h1 className={styles.pageTitle}>Software Developer</h1>
       </div>
       <div className={styles.projectsOverview}>
+        <h2>Projects</h2>
         <Categories data={data}></Categories>
       </div>
       </div>
