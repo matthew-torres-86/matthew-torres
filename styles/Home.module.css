@@ -9,8 +9,6 @@
     transform: translateX(0);
   }
 }
-
-
 @keyframes fade-right {
   from {
     opacity: 0;
@@ -46,6 +44,7 @@
 
   .pageTitle {
     animation: fade-left 1s ease;
+    transition: all .5s linear;
     float: left;
     margin: 0;
     left: 40px;
@@ -53,14 +52,11 @@
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: #2FF8C9;
-    padding-left: 5vw;
-    padding-top: 5vh;
-    width: 80%;
-    font-size: 12vw;
     text-shadow: 5px 5px 5px #333249;
   }
   .pageSubtitle {
     animation: fade-left 1s ease;
+    transition: all .5s linear;
     float: left;
     margin: 0;
     left: 40px;
@@ -68,18 +64,16 @@
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    padding-left: 8vw;
-    padding-top: 65vh;
-    width: 80%;
-    font-size: 2vw;
     /* text-shadow: 5px 5px 5px #333249; */
   }
 		
   .headerImage{
     animation: fade-right 1s ease;
+    transition: all .5s linear;
     float: right;
-    height: 85vh;
-    position: relative;
+    bottom: 0;
+    right: 0;
+    position: absolute;
     z-index: 3;
     filter: drop-shadow(5px 5px 5px #333249)
   }
@@ -108,8 +102,11 @@
     gap: 5%;
     display: flex;
     background-color: #272466;
-    height: 85vh;
+    min-height: 85vh;
+    max-height: fit-content;
     scroll-snap-align: start;
+    z-index: 1;
+    position: sticky;
   }
   .biotext{
     /* animation: fade-right 1s ease; */
@@ -125,7 +122,8 @@
   }
   .bio img{
     margin-top: 5vh;
-    height: 60%;
+    max-height: 60%;
+    max-width: 20vw;
   }
 
   .bio a{
@@ -137,14 +135,14 @@
   .resume{
     scroll-snap-align: start;
     padding-left: 5%;
-    height: 80vh;
+    height: 85vh;
     background-color: #03725B;
+    position: sticky;
+    z-index: 3;
   }
 
   .pdf{
-    width: 50%;
     height: 70vh;
-    margin-left: 25%;
     opacity: 0;
     transition: opacity 1s ease-in;
   }
@@ -153,3 +151,108 @@
     opacity: 1;
   }
 
+  .portfolio{
+    /* margin-top: -1em; */
+    scroll-snap-align: start;
+    background-color: #272466;
+    width: 100%;
+    overflow-x: hidden;
+    height: 85vh;
+    padding: 2%;
+    z-index: 5;
+  }
+
+  /*Small screen sizes*/
+  @media screen and (max-width: 885px){
+    .pageTitle{
+      padding-left: 5vw;
+      padding-top: 0;
+      width: 80%;
+      font-size: 15vw;
+    }
+    .pageSubtitle{
+      display: none;
+    }
+    .headerImage{
+      max-width: 85vw;
+      max-height: 70vh;
+    }
+    .bio img{
+      display: none;
+    }
+    .pdf{
+      width: 90%;
+      margin-left: 5%;
+    }
+  }
+  /*mid-sized screens*/
+  @media screen and (min-width: 886px) and (max-width: 1170px) {
+    .pageTitle{
+      padding-left: 5vw;
+      padding-top: 5vh;
+      width: 80%;
+      font-size: 14vw;
+    }
+    .pageSubtitle{
+      padding-left: 8vw;
+      padding-top: 55vh;
+      width: 60%;
+      font-size: 2vw;
+    }
+    .headerImage{
+      max-width: 50vw;
+      max-height: 80vh;
+    }
+    .pdf{
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+
+  /*Upper-mid screen sizes*/
+  @media screen and (min-width: 1171px) and (max-width: 1500px){
+    .pageTitle{
+      padding-left: 5vw;
+      padding-top: 5vh;
+      width: 90%;
+      font-size: 13vw;
+    }
+    .pageSubtitle{
+      padding-left: 8vw;
+      padding-top: 60vh;
+      width: 70%;
+      font-size: 2vw;
+    }
+    .headerImage{
+      max-width: 40vw;
+      max-height: 80vh;
+    }
+    .pdf{
+      width: 70%;
+      margin-left: 15%;
+    }
+  }
+
+  /*Large screen sizes*/
+  @media screen and (min-width: 1501px){
+    .pageTitle{
+      padding-left: 5vw;
+      padding-top: 5vh;
+      width: 80%;
+      font-size: 12vw;
+    }
+    .pageSubtitle{
+      padding-left: 8vw;
+      padding-top: 65vh;
+      width: 80%;
+      font-size: 2vw;
+    }
+    .headerImage{
+      max-width: 40vw;
+      max-height: 80vh;
+    }
+    .pdf{
+      width: 60%;
+      margin-left: 20%;
+    }
+  }

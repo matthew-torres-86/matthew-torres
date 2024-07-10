@@ -13,7 +13,8 @@
   scroll-snap-align: start;
   background-color: #272466;
   width: 100%;
-  height: 85vh;
+  min-height: 85vh;
+  max-height: fit-content;
   position: relative;
   display: flex;
   vertical-align: middle;
@@ -40,9 +41,6 @@
 }
 
 .preview{
-  width: 50%;
-  height: 60vh;
-  margin-top: 10vh;
   transition: all 1s ease;
   transition-delay: 0.5s;
 }
@@ -87,21 +85,17 @@
   /* margin-top: 10vh; */
   opacity: 1;
   padding: 5%;
-  overflow: hidden;
   max-height: 30em;
-  max-width: 50%;
   transition: all 1s ease;
   transition-delay: 0.5s;
 }
 
 .infoMinimized{
-  opacity: 0;
   transition: all 1s ease;
   transition-delay: 0.5s;
   padding-left: 5%;
   overflow: hidden;
   max-height: 30em;
-  text-wrap: nowrap;
 }
 
 .card video{
@@ -118,7 +112,6 @@
 }
 
 .infoMinimized h2, .infoMinimized p{
-  width: 0;
   transition: all 1s ease;
   transition-delay: 0.5s;
   overflow: hidden;
@@ -137,7 +130,8 @@
 
 .browse{
   scroll-snap-align: start;
-  height: 80vh;
+  min-height: 80vh;
+  max-height: fit-content;
 }
 .browse h2{
   margin-left: 1em;
@@ -163,3 +157,103 @@
 .thumbnails img:hover{
   height: 20em;
 }
+
+  /*Small screen sizes*/
+  @media screen and (max-width: 885px){
+    .card{
+      flex-direction: column;
+    }
+    .preview{
+      width: 100%;
+      height: 75vh;
+      margin-top: 10vh;
+    }
+    .videoFull{
+      width: 100%;
+      height: 75vh;
+      margin-top: 10vh;
+    }
+    .info{
+      max-width: 100%;
+    }
+    .infoMinimized h2, .infoMinimized p{
+      width: 100vw;
+      overflow-wrap: normal;
+    }
+    .infoMinimized{
+      opacity: 1;
+    }
+  }
+  /*mid-sized screens*/
+  @media screen and (min-width: 886px) and (max-width: 1170px) {
+    .card{
+      flex-direction: column;
+    }
+    .preview{
+      width: 100%;
+      height: 75vh;
+      margin-top: 10vh;
+    }
+    .videoFull{
+      width: 100%;
+      height: 75vh;
+      margin-top: 10vh;
+    }
+    .info{
+      max-width: 100%;
+    }
+    .infoMinimized{
+      opacity: 1;
+    }
+    .infoMinimized h2, .infoMinimized p{
+      width: 100%;
+    }
+  }
+
+  /*Upper-mid screen sizes*/
+  @media screen and (min-width: 1171px) and (max-width: 1500px){
+    .card{
+      flex-direction: row;
+    }
+    .preview{
+      width: 50%;
+      height: 60vh;
+      margin-top: 10vh;
+    }
+    .info{
+      max-width: 50%;
+    }
+    .infoMinimized{
+      opacity: 0;
+    }
+    .infoMinimized h2, .infoMinimized p{
+      width: 0;
+    }
+  }
+
+  /*Large screen sizes*/
+  @media screen and (min-width: 1501px){
+    .card{
+      flex-direction: row;
+    }
+    .preview{
+      width: 50%;
+      height: 60vh;
+      margin-top: 10vh;
+    }
+    .videoFull{
+      width: 100%;
+      height: 75vh;
+      transition: all 1s ease;
+      transition-delay: 0.5s;
+    }
+    .info{
+      max-width: 50%;
+    }
+    .infoMinimized{
+      opacity: 0;
+    }
+    .infoMinimized h2, .infoMinimized p{
+      width: 0;
+    }
+  }
