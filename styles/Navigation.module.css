@@ -68,6 +68,7 @@
   .mobilenav ul{
     display: block;
     width: 100%;
+    margin-left: 0;
   }
 
   .fullnav li a{
@@ -84,6 +85,7 @@
   }
   .mobilenav li a{
     background-color: #03725ce1;
+    width: 100%;
   }
   .mobilenav a, .mobilenav .dropdown{
     width: 100%;
@@ -96,30 +98,41 @@
 }
 
 .mobilenav .socials{
-  float: left;
-  margin-left: 5%;
+  /* float: left; */
  display: flex;
  width: 100%;
 }
 
 .mobilediv{
-  width: 30%;
+  display: flex;
+  width: 100%;
   float: left;
 }
-.socials a{
-    padding: 2px;
-    margin: 0;
+.fullnav .socials a{
+  padding: 2px;
+  margin: 0;
 }
 
+.sub{
+  margin-left: 2em;
+}
 /*Dropdown*/
-.dropdown{
+.fullnav .dropdown{
   /* width: 25%; */
   padding: 8px 5%;
   text-align: left;
   float: left;
   width: max-content;
 }
-  .dropdownContent{
+.mobilenav .dropdown{
+  /* width: 25%; */
+  padding: 8px 5%;
+  text-align: left;
+  float: left;
+  margin-left: 0;
+  width: 100%;
+}
+  .fullnav .dropdownContent{
     display: none;
     position: absolute;
     z-index: 10;
@@ -127,6 +140,19 @@
     width: inherit;
     padding-top: 1em;
     margin-left: -1em;
+  }
+  .mobilenav .dropdownContent{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    text-align: left;
+    width: inherit;
+    padding-top: 1em;
+    left: 0;
+    top: 10vh;
+  }
+  .mobilenav .dropdownContent a{
+    padding-left: 2.5em;
   }
   .dropdownContent a{
     padding: 1em;

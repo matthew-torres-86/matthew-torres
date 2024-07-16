@@ -5,6 +5,8 @@
     z-index: 8;
     position: fixed;
     width: 100%;
+    margin: 0;
+    padding: 0;
     background-color: #272466;
     left: 0;
 }
@@ -13,6 +15,8 @@
   scroll-snap-align: start;
   background-color: #272466;
   width: 100%;
+  margin: 0;
+  padding: 0;
   min-height: 85vh;
   max-height: fit-content;
   position: relative;
@@ -35,6 +39,8 @@
 
 .card{
   width: 100%;
+  margin: 0;
+  padding: 0;
   position: relative;
   display: flex;
   scroll-snap-align: top;
@@ -43,11 +49,14 @@
 .preview{
   transition: all 1s ease;
   transition-delay: 0.5s;
+  height: 100%;
 }
 
-.videoFull{
+.full{
+  margin: 0;
+  padding: 0;
   width: 100%;
-  height: 75vh;
+  height: 100%;
   transition: all 1s ease;
   transition-delay: 0.5s;
 }
@@ -58,11 +67,19 @@
   transition: width 1s ease;
   transition: height 1s ease;
   transition-delay: 0.5s;
-  /* background: url(../public/laptop-frame.png) center center no-repeat; */
-  /* background-size: contain; */
-  /* width: fit-content;
-  height: fit-content; */
-  /* padding: 2vh 10vw 8vh 10vw; */
+}
+.video{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 90%;
+  transition: all 1s ease;
+  transition-delay: 0.5s;
+}
+.video iframe{
+  margin-left: 2.5%;
+  padding: 0;
+  width: 100%;
 }
 .laptop img{
   position: absolute;
@@ -126,6 +143,7 @@
   text-decoration: none;
   position: relative;
   z-index: 2;
+  text-align: center;
 }
 
 .browse{

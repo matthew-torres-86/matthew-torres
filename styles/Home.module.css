@@ -157,7 +157,7 @@
     background-color: #272466;
     width: 100%;
     overflow-x: hidden;
-    height: 85vh;
+    height: 80vh;
     padding: 2%;
     z-index: 5;
   }
@@ -176,6 +176,18 @@
     .headerImage{
       max-width: 85vw;
       max-height: 70vh;
+    }
+    .bio{
+      display: block;
+    }
+    .biotext{
+      margin-top: 0;
+    }
+    .resume{
+      padding-left: 0;
+    }
+    .resume h2{
+      padding-left: 1em;
     }
     .bio img{
       display: none;

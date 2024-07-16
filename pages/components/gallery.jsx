@@ -20,42 +20,44 @@ export default function Gallery({data}){
     const timerRef = useRef(null);
     //function that resets timer whenever move left or right
     
-    const beginNewTimerInterval = (action) => {
-    if (timerRef.current) clearInterval(timerRef.current);
-        timerRef.current = setInterval(action, timerDelay);
-    };
+    // const beginNewTimerInterval = (action) => {
+    // if (timerRef.current) clearInterval(timerRef.current);
+    //     timerRef.current = setInterval(action, timerDelay);
+    // };
 
     const moveNext = () => {
         console.log("moving next", isPlaying);
         if(!isPlaying) setIndex(mod((index+1), numCards));
-        beginNewTimerInterval(moveNext)
+        // beginNewTimerInterval(moveNext)
     }
 
     const moveBack = () => {
         if(!isPlaying) setIndex(mod((index-1), numCards));
-        beginNewTimerInterval(moveNext)
+        // beginNewTimerInterval(moveNext)
     }
 
     const nextButton = () => {
         setIsPlaying(false);
         setIndex(mod((index+1), numCards));
-        beginNewTimerInterval(moveNext)
+        // beginNewTimerInterval(moveNext)
     }
     const backButton = () => {
         setIsPlaying(false);
         setIndex(mod((index-1), numCards));
-        beginNewTimerInterval(moveNext)
+        // beginNewTimerInterval(moveNext)
     }
 
-    beginNewTimerInterval(moveNext)
+    // beginNewTimerInterval(moveNext)
     return(
         <div className={styles.scroller}>
             <div className={styles.projectsGallery}>
                 <button onClick={backButton}><img src="/icons/chevron-left-solid.svg"></img></button>
                 <div className={styles.card}>
-                        <div className={isPlaying? styles.videoFull: styles.preview }>
+                        <div className={isPlaying? styles.full: styles.preview }>
                             {selectedCard.video && 
-                                <video onPlay={()=>setIsPlaying(true)} onPause={()=>setIsPlaying(false)} src={selectedCard.video} controls/> 
+                            <div className={styles.video} onMouseEnter={()=>setIsPlaying(true)} onMouseLeave={()=>setIsPlaying(false)}>
+                                <iframe src={selectedCard.video} width="100%" height="100%" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe> 
+                            </div>
                             }
                             {selectedCard.code && 
                                 
