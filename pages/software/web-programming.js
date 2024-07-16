@@ -12,6 +12,7 @@ const data =
   {name:"KeepMassBeautiful", title: "Contact Page",site:"https://keep-mass-beautiful.vercel.app/Boston/contact", date: "September 2023 - May 2024",org: "Jumbocode",descr: "One contact page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
   {name:"KeepMassBeautiful", title: "Events Page",site:"https://keep-mass-beautiful.vercel.app/Boston/events", date: "September 2023 - May 2024",org: "Jumbocode", descr: "One events page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
 ]
+const BLUE = "#272466"
 
 export default function MusicDirector() {
   const [hydrated, setHydrated] = useState(false);
@@ -32,7 +33,7 @@ export default function MusicDirector() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigation></Navigation>
+      <Navigation color={BLUE}></Navigation>
     <body>
       <div className={styles.projectsDetail}>
         <Gallery data={data}></Gallery>

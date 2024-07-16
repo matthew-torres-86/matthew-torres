@@ -22,6 +22,8 @@ const data =
   {name:"COMING SOON: Twelfth Night", video:"/none", title: "Is This Not Love", caption: "Video Credit: AE. I do not own the rights to this song. This production was in partnership with Concord Theatricals, with video for portfolio purposes only.", date:"December 2024 - March 2024", org: "Tufts' Department of Theater, Dance, and Performance Studies", descr:"Matthew's final collegiate musical theater production", thumbnail:"/12thnight.png"},
 ]
 
+const BLUE = "#272466"
+
 export default function MusicDirector() {
   const [hydrated, setHydrated] = useState(false);
   
@@ -41,7 +43,7 @@ export default function MusicDirector() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigation></Navigation>
+      <Navigation color={BLUE}></Navigation>
     <body>
       <div className={styles.projectsDetail}>
         <Gallery data={data}></Gallery>

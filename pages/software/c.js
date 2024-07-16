@@ -12,6 +12,8 @@ const data =
   {name:"Six Degrees", code:"https://gist.github.com/matthew-torres-86/2566e8ebf4eebf3c7b9202df9d142f2b.js", title: "Six Degrees",caption: "Author: Matthew Torres. DO NOT REPRODUCE", date:"March 2021", org: "Tufts' CS15: Data Structures and Algorithms", descr:"A C++ program that uses data structures to build a graph of collaborations between various musical artists. It will then tell you the number of degrees of separation artists are from one another"},
 ]
 
+const BLUE = "#272466"
+
 export default function Pianist() {
   const [hydrated, setHydrated] = useState(false);
   
@@ -31,7 +33,7 @@ export default function Pianist() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigation></Navigation>
+      <Navigation color={BLUE}></Navigation>
     <body>
       <div className={styles.projectsDetail}>
         <Gallery data={data}></Gallery>

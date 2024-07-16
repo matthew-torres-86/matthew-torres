@@ -50,9 +50,6 @@ export default function Home() {
     // Returns null on first render, so the client and server match
     return null;
   }
-  if (typeof document !== "undefined") {
-      
-  }
   return (
     <>
       <Head>

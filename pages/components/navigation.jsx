@@ -14,7 +14,7 @@ export default function Navigation({active, color}){
             </li>
             <li className = {styles.dropdown}>
                 <a href="/music">MUSICIAN</a>
-                <div className={styles.dropdownContent}>
+                <div className={styles.dropdownContent}  style={{backgroundColor:color}}>
                     <a href="/music/music-director">Music Director</a>
                     <a href="/music/pianist">Pianist</a>
                     <a href="/music/organist">Organist</a>
@@ -22,7 +22,7 @@ export default function Navigation({active, color}){
             </li>
             <li className = {styles.dropdown}>
                 <a href="/software">SOFTWARE DEVELOPER</a>
-                <div className={styles.dropdownContent}>
+                <div className={styles.dropdownContent}  style={{backgroundColor:color}}>
                     <a href="/software/web-programming">Web Programming</a>
                     <a href="/software/c">C Languages</a>
                     <a href="/software/python">Python</a>
@@ -55,7 +55,7 @@ export default function Navigation({active, color}){
             </li>
                     {/* <a href = "/"><img className = {styles.logo} src="/logo.png"/></a> */}
                 </div>
-                <div className={styles.dropdownContent}>
+                <div className={styles.dropdownContent} style={{backgroundColor:color}}>
                 
                     <a href="/software">SOFTWARE DEVELOPER</a>
                         <a href="/software/web-programming" className={styles.sub}>Web Programming</a>

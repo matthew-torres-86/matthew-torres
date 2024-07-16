@@ -12,22 +12,29 @@ const data =
   {name:"C Languages", image:"tufts.jpeg", link:"./software/c"},
 ]
 
-function reveal() {
-  var reveals = document.querySelectorAll(`.${styles.headerImage}, .${styles.pageTitle}`);
-  console.log(reveals);
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 200;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add(styles.active);
-    }
-  }
-}
+const BLUE = "#272466"
+const GREEN = "#03725B"
+
+
 
 export default function Software() {
   const [hydrated, setHydrated] = useState(false);
+  const [color, setColor] = useState(GREEN)
 
+  function reveal() {
+    var reveals = document.querySelectorAll(`.${styles.backgroundLayer}, .${styles.projectsOverview}`);
+    console.log(reveals);
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementBottom = reveals[i].getBoundingClientRect().bottom;
+      var elementVisible = 100;
+      if (elementTop < windowHeight - elementVisible && elementBottom >= windowHeight - elementVisible) {
+        if(i==0){setColor(GREEN)}
+        else{setColor(BLUE)}
+      }
+    }
+  }
   useEffect(() => {
     setHydrated(true);
   }, []);
@@ -35,9 +42,6 @@ export default function Software() {
     // Returns null on first render, so the client and server match
     return null;
   }
-  if (typeof window !== "undefined") {
-      window.addEventListener("scroll", reveal);
-    }
   return (
     <>
       <Head>
@@ -46,9 +50,9 @@ export default function Software() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="favicon.ico" />
       </Head>
-      <Navigation active={1}></Navigation>
+      <Navigation active={1} color={color}></Navigation>
     <body>
-    <div className={styles.scroller}>
+    <div className={styles.scroller} onScroll={reveal}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="cs.png"/>
           <h1 className={styles.pageTitle}>Software Developer</h1>

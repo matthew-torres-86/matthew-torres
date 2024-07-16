@@ -11,6 +11,8 @@ const data =
 
 ]
 
+const BLUE = "#272466"
+
 export default function Organist() {
   const [hydrated, setHydrated] = useState(false);
   
@@ -30,7 +32,7 @@ export default function Organist() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigation></Navigation>
+      <Navigation color={BLUE}></Navigation>
     <body>
       <div className={styles.projectsDetail}>
         <Gallery data={data}></Gallery>
