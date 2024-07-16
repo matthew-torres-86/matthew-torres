@@ -1,11 +1,10 @@
 /*Footer Styles*/
 
 .footer{
-  background-color: #545454;
+  /* background-color: #545454; */
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-  min-height: 100px;
-  padding-top: 40px;
+  height: 5vh; 
   width: 100%;
   display: flex;
   justify-content: center;
@@ -21,7 +20,7 @@
   font-family: Inter, Arial, Helvetica, sans-serif;
   padding: 12px;
   color:#fff;
-  background-color: #03725B;
+  /* background-color: #03725B; */
 }
 
 .footer li a{

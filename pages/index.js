@@ -17,20 +17,28 @@ const data =
   {name:"Music Portfolio", image:"piano.JPG", link:"./music"},
 ]
 
-function reveal() {
-  var reveals = document.querySelectorAll(`.${styles.biotext}, .${styles.pdf}`);
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 100;
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add(styles.active);
-    }
-  }
-}
+const GREEN = "#03725B"
+const BLUE = "#272466"
+
 
 export default function Home() {
   const [hydrated, setHydrated] = useState(false);
+  const [color, setColor] = useState(GREEN)
+
+  function reveal() {
+    var reveals = document.querySelectorAll(`.${styles.backgroundLayer}, .${styles.biotext}, .${styles.pdf}, .${styles.portfolio}`);
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementBottom = reveals[i].getBoundingClientRect().bottom;
+      var elementVisible = 100;
+      if (elementTop < windowHeight - elementVisible && elementBottom >= windowHeight - elementVisible) {
+        reveals[i].classList.add(styles.active);
+        if(i==0 || i == 2){setColor(GREEN)}
+        else{setColor(BLUE)}
+      }
+    }
+  }
   // const [displayedReference, setDisplayedReference] = useState(0);
   // setTimeout(()=>setDisplayedReference((displayedReference+1) % REFERENCES.length), 5000)
   
@@ -53,7 +61,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="favicon.ico" />
       </Head>
-      <Navigation></Navigation>
+      <Navigation active={0} color={color}></Navigation>
     <body>
     <div className={styles.scroller} onScroll={reveal}>
       <div className={styles.backgroundLayer}>
@@ -67,7 +75,7 @@ export default function Home() {
         <p>-{REFERENCES[displayedReference]}</p>
       </div> */}
       <div className={styles.bio}>
-      <img src="laser-background.png" className={styles.backgroundImage}></img>
+      {/* <img src="dotted-background-reverse.png" className={styles.backgroundImageReverse}></img> */}
         <div>
         <h2 id="bio">Bio</h2>
         <img src="bio.jpeg" className={styles.bioimg}></img>
@@ -82,8 +90,9 @@ export default function Home() {
       <div className={styles.portfolio}>
         <h2>View Portfolio</h2>
         <Categories data={data}></Categories>
+        
       </div>
-      <Footer></Footer>
+      <Footer color={BLUE}></Footer>
     </div>
     </body>
     

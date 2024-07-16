@@ -41,6 +41,7 @@
     width: 100%;
     /* height: fit-content; */
     height: 85vh;
+
   }
 
   .pageTitle {
@@ -86,7 +87,14 @@
     bottom: 0;
     left: 0;
   }
-
+  .backgroundImageReverse{
+    width: 100%;
+    position:absolute;
+    z-index: -5;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+  }
   .active{
     display: block;
     transform: translateX(0);
@@ -107,6 +115,7 @@
     text-align: center;
   } */
   .bio{
+    position: relative;
     padding: 5%;
     gap: 5%;
     display: flex;
@@ -115,7 +124,6 @@
     max-height: fit-content;
     scroll-snap-align: start;
     z-index: 1;
-    position: sticky;
   }
   .biotext{
     /* animation: fade-right 1s ease; */
@@ -142,12 +150,13 @@
   }
 
   .resume{
+    position: relative;
     scroll-snap-align: start;
-    padding-left: 5%;
-    height: 85vh;
+    padding: 2%;
+    min-height: 85vh;
+    max-height: fit-content;
     background-color: #03725B;
-    position: sticky;
-    z-index: 3;
+    z-index: 5;
   }
 
   .pdf{
@@ -161,14 +170,16 @@
   }
 
   .portfolio{
+    position: relative;
     /* margin-top: -1em; */
     scroll-snap-align: start;
     background-color: #272466;
     width: 100%;
     overflow-x: hidden;
-    height: 80vh;
+    height: 81vh;
     padding: 2%;
     z-index: 5;
+
   }
 
   /*Small screen sizes*/

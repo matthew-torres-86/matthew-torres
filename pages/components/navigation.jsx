@@ -1,11 +1,11 @@
 import styles from "@/styles/Navigation.module.css";
-export default function Navigation({active}){
+export default function Navigation({active, color}){
     return(
-    <nav className={styles.nav}>    
+    <nav className={styles.nav} style={{backgroundColor:color}}>    
         <div className={styles.fullnav}>
         <a href = "/"><img className = {styles.logo} src="/logo.png"/></a>
         <ul>
-        <li className={styles.socials}>
+        <li className={styles.socials} style={{backgroundColor:color}}>
                 <a href="https://www.linkedin.com/in/matthew-r-torres/" target="_blank"><img src="/icons/Linkedin.png" width="40px"/></a>
                 <a href="https://github.com/matthew-torres-86" target="_blank"><img src="/icons/github.png" width="40px"/></a>
                 <a href="https://www.facebook.com/profile.php?id=100041754421410" target="_blank"><img src="/icons/facebook.png" width="40px"/></a>
