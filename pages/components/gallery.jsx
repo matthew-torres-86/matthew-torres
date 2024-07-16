@@ -89,7 +89,7 @@ export default function Gallery({data}){
                     
                     {data.map((d, i)=>
                         {if(d.thumbnail)
-                            return <img src={d.thumbnail} onClick={()=>{setIndex(i); beginNewTimerInterval(moveNext); setIsPlaying(false)}}></img>
+                            return <img src={d.thumbnail} onClick={()=>{setIndex(i); setIsPlaying(false)}}></img>
                         }
                     )}
                 </div>
