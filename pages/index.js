@@ -58,6 +58,7 @@ export default function Home() {
     <div className={styles.scroller} onScroll={reveal}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="Matthew Torres.png"/>
+          <img className={styles.backgroundImage} src="dotted-background.png"></img>
           <h1 className={styles.pageTitle}>Matthew Torres</h1>
           <h2 className={styles.pageSubtitle}>Software Developer | Musician | Boston, MA</h2>
       </div>
@@ -66,9 +67,11 @@ export default function Home() {
         <p>-{REFERENCES[displayedReference]}</p>
       </div> */}
       <div className={styles.bio}>
+      <img src="laser-background.png" className={styles.backgroundImage}></img>
         <div>
         <h2 id="bio">Bio</h2>
-        <img src="bio.jpeg"></img>
+        <img src="bio.jpeg" className={styles.bioimg}></img>
+        
         </div>
         {BIO}
     </div>

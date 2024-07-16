@@ -1,8 +1,5 @@
-
-/*Navigation Styles*/
-
-
-.nav{
+  /* Navigation Styles*/
+  .nav{
     background-color: #03725B;
     margin: 0;
     display: inline-block;
@@ -11,22 +8,6 @@
     position: sticky;
     top: 0;
     z-index: 10;
-  }
-  .fullnav{
-    background-color: #03725B;
-  }
-  .mobilenav{
-    background-color: #03725c00;
-  }
-  .fullnav .logo{
-    width: 12%;
-    margin-top: 3vh;
-    margin-left: 1vw;
-    /* display: inline-block; */
-    padding: 0px;
-  }
-  .mobilenav .logo{
-    width: 20%;
   }
   .nav ul{
     list-style-type: none;
@@ -49,39 +30,80 @@
     transition: color 1s ease;
     background-color: #03725B;
   }
-
   .nav li a.active{
     color: #0BF8C6;
   }
-
   .nav li a:hover{
     color: #0BF8C6;
   } 
 
-/*Mobile friendly Nav*/
+  /* Full-sized Navigation Styles */
+  .fullnav{
+    background-color: #03725B;
+  }
+  .fullnav .logo{
+    width: 10em;
+    margin-top: 5vh;
+    margin-left: 1vw;
+    padding: 0px;
+  }
   .fullnav ul{
     display: inline-block;
     width: 80vw;
-    /* right: 0; */
   }
-
-  .mobilenav ul{
-    display: block;
-    width: 100%;
-    margin-left: 0;
-  }
-
   .fullnav li a{
     font-size: 14pt;
     background-color: #03725B;
+    float: right;
     /* width: fit-content; */
     /* text-align: center; */
     /* min-width: 180px; */
   }
-
+  .fullnav .socials{
+    /* float: right; */
+    /* margin-left: 5%; */
+    display: flex;
+    /* width: 15vw; */
+}
+.fullnav .socials a{
+  padding: 2px;
+  margin: 0;
+}
+.fullnav ul .dropdown{
+  /* width: 25%; */
+  padding: 8px 10% 8px 0;
+  text-align: left;
+  float: right;
+  width: max-content;
+}
+.fullnav ul .dropdownContent{
+  display: none;
+  position: absolute;
+  z-index: 10;
+  text-align: left;
+  width: inherit;
+  top: 8vh;
+  padding-top: 1em;
+  margin-left: -1em;
+}
+  /* Mobile Navigation Styles */
   .mobilenav{
+    background-color: #03725c00;
     width: 100%;
     height: 100%;
+  }
+  .mobilediv{
+    display: flex;
+    width: 100%;
+    float: left;
+  }
+  .mobilenav .logo{
+    width: 20%;
+  }
+  .mobilenav ul{
+    display: block;
+    width: 100%;
+    margin-left: 0;
   }
   .mobilenav li a{
     background-color: #03725ce1;
@@ -90,40 +112,15 @@
   .mobilenav a, .mobilenav .dropdown{
     width: 100%;
   }
-  .fullnav .socials{
-    /* float: right; */
-    /* margin-left: 5%; */
+  .mobilenav .socials{
+    /* float: left; */
     display: flex;
-    /* width: 15vw; */
-}
+    width: 100%;
+  }
+  .sub{
+    margin-left: 2em;
+  }
 
-.mobilenav .socials{
-  /* float: left; */
- display: flex;
- width: 100%;
-}
-
-.mobilediv{
-  display: flex;
-  width: 100%;
-  float: left;
-}
-.fullnav .socials a{
-  padding: 2px;
-  margin: 0;
-}
-
-.sub{
-  margin-left: 2em;
-}
-/*Dropdown*/
-.fullnav .dropdown{
-  /* width: 25%; */
-  padding: 8px 5%;
-  text-align: left;
-  float: left;
-  width: max-content;
-}
 .mobilenav .dropdown{
   /* width: 25%; */
   padding: 8px 5%;
@@ -132,15 +129,7 @@
   margin-left: 0;
   width: 100%;
 }
-  .fullnav .dropdownContent{
-    display: none;
-    position: absolute;
-    z-index: 10;
-    text-align: left;
-    width: inherit;
-    padding-top: 1em;
-    margin-left: -1em;
-  }
+  
   .mobilenav .dropdownContent{
     display: none;
     position: absolute;
@@ -159,7 +148,8 @@
   }
 
   .dropdown:hover .dropdownContent{
-    display: block;
+    display: flex;
+    flex-direction: column;
   } 
 
 /*Media Queries*/
