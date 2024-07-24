@@ -7,10 +7,10 @@ import Footer from "../components/footer";
 
 const data =
 [
-  {name:"KeepMassBeautiful", title: "Home Page", site:"https://keep-mass-beautiful.vercel.app/Boston", date: "September 2023 - May 2024", org: "Jumbocode", thumbnail: "/KMB.png", descr: "One home page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
-  {name:"KeepMassBeautiful", title: "About Page",site:"https://keep-mass-beautiful.vercel.app/Boston/about", date: "September 2023 - May 2024",org: "Jumbocode", descr: "One about page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
-  {name:"KeepMassBeautiful", title: "Contact Page",site:"https://keep-mass-beautiful.vercel.app/Boston/contact", date: "September 2023 - May 2024",org: "Jumbocode",descr: "One contact page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
-  {name:"KeepMassBeautiful", title: "Events Page",site:"https://keep-mass-beautiful.vercel.app/Boston/events", date: "September 2023 - May 2024",org: "Jumbocode", descr: "One events page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
+  {name:"KeepMassBeautiful", title: "Home Page", site:"https://keep-mass-beautiful.vercel.app/Demo", date: "September 2023 - May 2024", org: "Jumbocode", thumbnail: "/KMB.png", descr: "One home page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
+  {name:"KeepMassBeautiful", title: "About Page",site:"https://keep-mass-beautiful.vercel.app/Demo/about", date: "September 2023 - May 2024",org: "Jumbocode", descr: "One about page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
+  {name:"KeepMassBeautiful", title: "Contact Page",site:"https://keep-mass-beautiful.vercel.app/Demo/contact", date: "September 2023 - May 2024",org: "Jumbocode",descr: "One contact page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
+  {name:"KeepMassBeautiful", title: "Events Page",site:"https://keep-mass-beautiful.vercel.app/Demo/events", date: "September 2023 - May 2024",org: "Jumbocode", descr: "One events page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
 ]
 const BLUE = "#272466"
 

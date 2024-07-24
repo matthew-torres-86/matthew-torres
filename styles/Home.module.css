@@ -116,8 +116,8 @@
   } */
   .bio{
     position: relative;
-    padding: 5%;
-    gap: 5%;
+    padding: 2% 5%;
+    gap: 2%;
     display: flex;
     background-color: #272466;
     min-height: 85vh;
@@ -152,7 +152,7 @@
   .resume{
     position: relative;
     scroll-snap-align: start;
-    padding: 2%;
+    padding: 2% 5%;
     min-height: 85vh;
     max-height: fit-content;
     background-color: #03725B;
@@ -177,7 +177,7 @@
     width: 100%;
     overflow-x: hidden;
     height: 81vh;
-    padding: 2%;
+    padding: 2% 5%;
     z-index: 5;
 
   }
