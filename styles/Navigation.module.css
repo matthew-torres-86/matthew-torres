@@ -147,9 +147,8 @@
     z-index: 10;
     text-align: left;
     width: inherit;
-    padding-top: 1em;
     left: 0;
-    top: 10vh;
+    top: 15vh;
     overflow-x: hidden;
   }
   .mobilenav .dropdownContent a{
