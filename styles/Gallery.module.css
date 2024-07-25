@@ -54,12 +54,10 @@
   z-index: 5;
 }
 .showInfo{
-  width: 3em;
-  padding: 10px;
-  background-color: #272466ab;
+  width: 4em;
+  padding: 15px;
   position: relative;
-  margin-left: -3vw;
-  /* background: none; */
+  margin-left: -4em;
   border: none;
   border-radius: 50% 0 0 50%;
   z-index: 8;
@@ -150,20 +148,29 @@
   z-index: 3;
   position: absolute;
   right: 0;
-  background-color: #272466ab;
-  padding: 5%;
+  top: 0;
+  /* padding: 5%; */
   height: 100%;
-  width: 40%;
+  /* width: 50%; */
   
+}
+.infoText{
+  position: absolute;
+  padding: 3%;
+  top: 0;
+  background-color: #272466ab;
+  width: 100%;
+  height: 100%;
 }
 
 .infoMinimized{
   position: absolute;
+  top: 0;
   /* animation: slide-out 1s ease; */
-  left: 95%;
+  left: 100%;
   z-index: 5;
-  padding: 5%;
-  height: 75vh;
+  width: 100%;
+  height: 100%;
 }
 
 .info h2, .info p{
@@ -229,6 +236,13 @@
       width: 100%;
       height: 40vh;
     }
+    .showInfo{
+      margin-left: 0;
+      background: none;
+    }
+    .info{
+      width: 100%;
+    }
     .full{
       width: 100%;
       height: 85vh;
@@ -238,6 +252,15 @@
     }
     .laptop{
       height: 100%;
+    }
+    .laptop iframe{
+      position: absolute;
+      width: 66%;
+      border-radius: 50px;
+      left: 17%;
+      height: 92%;
+      margin-top: 2vh;
+      z-index: 3;
     }
   }
   /*mid-sized screens*/
@@ -249,17 +272,29 @@
       width: 100%;
       height: 85vh;
     }
+    .showInfo{
+      margin-left: 0;
+      background: none;
+    }
+    .info{
+      width: 100%;
+    }
     .video iframe{
       margin-top: -7%;
     }
     .laptop{
       height: 100%;
     }
-    .info{
-      width: 50%;
-    }
     .infoMinimized h2, .infoMinimized p{
       width: 100%;
+    }
+    .laptop iframe{
+      position: absolute;
+      width: 70%;
+      left: 15%;
+      height: 80%;
+      margin-top: 2vh;
+      z-index: 3;
     }
   }
 
@@ -276,6 +311,13 @@
     .full{
       height: 75vh;
     }
+    .showInfo{
+      margin-left: -4em;
+      background-color: #272466ab;
+    }
+    .info{
+      width: 50%;
+    }
     .video iframe{
       margin-top: -6%;
     }
@@ -284,8 +326,13 @@
       max-height: 100%;
       aspect-ratio: 3.5/2;
     }
-    .info{
-      width: 40%;
+    .laptop iframe{
+      position: absolute;
+      width: 70%;
+      left: 15%;
+      height: 80%;
+      margin-top: 2vh;
+      z-index: 3;
     }
   }
 
@@ -308,9 +355,20 @@
       max-height: 110%;
       aspect-ratio: 3.5/2;
     }
+    .laptop iframe{
+      position: absolute;
+      width: 70%;
+      left: 15%;
+      height: 80%;
+      margin-top: 2vh;
+      z-index: 3;
+    }
+    .showInfo{
+      margin-left: -4em;
+      background-color: #272466ab;
+    }
     .info{
-      width: 40%; 
-      height: 100%;
+      width: 50%;
     }
   
   }

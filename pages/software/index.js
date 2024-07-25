@@ -52,7 +52,7 @@ export default function Software() {
       </Head>
       <Navigation active={1} color={color}></Navigation>
     <body>
-    <div className={styles.scroller} onScroll={reveal}>
+    <div className={styles.scroller} style={{backgroundColor: BLUE}} onScroll={reveal}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="cs.png"/>
           <img className={styles.pageTitle} src="Software-Developer-Text.png"></img>

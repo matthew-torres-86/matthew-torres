@@ -3,9 +3,26 @@ import { useState, useRef } from "react";
 import { CopyBlock, dracula } from 'react-code-blocks';
 import Frame from 'react-frame-component';
 
+const BLUE = "#272466"
+
 export default function Gallery({data}){
     const [index, setIndex] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);
+    const [isMobile, setIsMobile] = useState(false)
+
+    if(typeof(window) !== 'undefined'){
+       
+        const listener = () => {
+            if(window.matchMedia(`(max-width: 885px)`).matches){
+                setIsMobile(true)
+            }
+            else{
+                setIsMobile(false)
+            }    
+        }
+        window.addEventListener('resize', listener);
+    }
+
     if(data==null){
         return(<p>Component Not Found</p>)
     }
@@ -49,7 +66,7 @@ export default function Gallery({data}){
 
     // beginNewTimerInterval(moveNext)
     return(
-        <div className={styles.scroller}>
+        <div className={styles.scroller} style={{backgroundColor: BLUE}}>
             <div className={styles.projectsGallery}>
                 <button className={styles.left} onClick={backButton}><img src="/icons/chevron-left-solid.svg"></img></button>
                 <button className={styles.right} onClick={nextButton}><img src="/icons/chevron-right-solid.svg"></img></button>
@@ -69,7 +86,7 @@ export default function Gallery({data}){
 
                             {selectedCard.site && 
                                 <div className={styles.laptop}>
-                                    <img src="/laptop-frame.png"></img>
+                                    <img src={isMobile? "/phone-frame.png":"/laptop-frame.png"}></img>
                                 <iframe src={selectedCard.site}></iframe>
                                 </div>
                             }
