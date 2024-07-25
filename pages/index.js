@@ -32,7 +32,7 @@ export default function Home() {
       var elementTop = reveals[i].getBoundingClientRect().top;
       var elementBottom = reveals[i].getBoundingClientRect().bottom;
       var elementVisible = 100;
-      if (elementTop < windowHeight - elementVisible && elementBottom >= windowHeight - elementVisible) {
+      if (elementTop < windowHeight - elementVisible || elementBottom <= windowHeight) {
         reveals[i].classList.add(styles.active);
         if(i==0 || i == 2){setColor(GREEN)}
         else{setColor(BLUE)}
@@ -84,11 +84,18 @@ export default function Home() {
     </div>
     <div className={styles.resume}>
         <h2>Resume</h2>
-        <object className={styles.pdf} data="Matthew Torres Resume.pdf" type="application/pdf"></object>
+        
+        <object className={styles.pdf} data="Matthew Torres Resume.pdf" type="application/pdf" width="100%" height="100%">
+        <p>Unable to display PDF file. <a href="Matthew Torres Resume.pdf">Download</a> instead.</p>
+        </object>
+        
       </div>
       <div className={styles.portfolio}>
         <h2>View Portfolio</h2>
-        <Categories data={data}></Categories>
+        <div className={styles.portfolioIcons}>
+          <a href="/software"><img src="/icons/laptop-code-solid.svg" width="150px"></img><h3>Software</h3></a>
+          <a href="/music"><img src="/icons/music-solid.svg" width="120px"></img><h3>Music</h3></a>
+        </div>
         
       </div>
       <Footer color={BLUE}></Footer>

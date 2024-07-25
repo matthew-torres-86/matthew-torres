@@ -1,11 +1,12 @@
 *{
   font-family: Inter, Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  scrollbar-color: #000000b9 #00000000;
 }
 
 body{
   margin: 0;
-  background-color: #03725B;
+  background-color: #03725c00;
 }
 
 p {

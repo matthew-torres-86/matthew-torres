@@ -26,7 +26,7 @@
     scroll-snap-type: y mandatory;
     z-index: 8;
     position: fixed;
-    background-color: #03725B;
+    background-color: #03725c00;
   }
 /*Page cover photos and captions*/
   .backgroundLayer {
@@ -37,7 +37,7 @@
     padding: 0;
     top: 0;
     z-index: 0;
-    background-color: #03725c88;
+    background-color: #03725c;
     width: 100%;
     /* height: fit-content; */
     height: 85vh;
@@ -121,6 +121,7 @@
     display: flex;
     background-color: #272466;
     min-height: 85vh;
+    width: 100%;
     max-height: fit-content;
     scroll-snap-align: start;
     z-index: 1;
@@ -153,15 +154,14 @@
     position: relative;
     scroll-snap-align: start;
     padding: 2% 5%;
-    min-height: 85vh;
-    max-height: fit-content;
+    height: 85vh;
     background-color: #03725B;
     z-index: 5;
   }
 
   .pdf{
     height: 70vh;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 1s ease-in;
   }
 
@@ -181,17 +181,39 @@
     z-index: 5;
 
   }
+  .portfolioIcons{
+    display: flex;
+    justify-content: center;
+    padding: 0 10%;
+    gap: 5%;
+    width: 100%;
+  }
+  .portfolioIcons a{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    aspect-ratio: 1;
+    border: 3px solid #fff;
+    border-radius: 100%;
+    color: #fff;
+  }
 
   /*Small screen sizes*/
   @media screen and (max-width: 885px){
     .pageTitle{
       padding-left: 5vw;
-      padding-top: 0;
+      padding-top: 5vh;
       width: 80%;
       font-size: 15vw;
     }
     .pageSubtitle{
-      display: none;
+      padding-top: 35vh;
+      padding-left: 2vw;
+      width: 60%;
+      font-size: 3.5vw;
     }
     .headerImage{
       max-width: 85vw;
@@ -203,6 +225,9 @@
     .biotext{
       margin-top: 0;
     }
+    .bio p{
+      font-size: 12px;
+    }
     .resume{
       padding-left: 0;
     }
@@ -213,8 +238,8 @@
       display: none;
     }
     .pdf{
-      width: 90%;
-      margin-left: 5%;
+      width: 100vw;
+      height: 70vh;
     }
   }
   /*mid-sized screens*/
@@ -227,7 +252,7 @@
     }
     .pageSubtitle{
       padding-left: 8vw;
-      padding-top: 55vh;
+      padding-top: 65vh;
       width: 60%;
       font-size: 2vw;
     }
@@ -237,6 +262,7 @@
     }
     .pdf{
       width: 80%;
+      opacity: 0;
       margin-left: 10%;
     }
   }
@@ -261,6 +287,7 @@
     }
     .pdf{
       width: 70%;
+      opacity: 0;
       margin-left: 15%;
     }
   }
@@ -284,6 +311,7 @@
       max-height: 80vh;
     }
     .pdf{
+      opacity: 0;
       width: 60%;
       margin-left: 20%;
     }

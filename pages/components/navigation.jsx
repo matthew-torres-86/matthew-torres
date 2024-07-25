@@ -33,19 +33,12 @@ export default function Navigation({active, color}){
     </div>
     <div className={styles.mobilenav}>
         <ul>
-            {/* <li className={styles.socials}>
-                <a href="https://www.linkedin.com/in/matthew-r-torres/" target="_blank"><img src="/icons/Linkedin.png" width="40px"/></a>
-                <a href="https://github.com/matthew-torres-86" target="_blank"><img src="/icons/github.png" width="40px"/></a>
-                <a href="https://www.facebook.com/profile.php?id=100041754421410" target="_blank"><img src="/icons/facebook.png" width="40px"/></a>
-                <a href="https://www.instagram.com/matt.torres_86/" target="_blank"><img src="/icons/instagram.png" width="40px"/></a>
-                <a href="https://twitter.com/Matttorres2020" target="_blank"><img src="/icons/twitter.png" width="40px"/></a>
-            </li> */}
             
             <li className = {styles.dropdown}>
                 <div className={styles.mobilediv}>
                     
-                    <a><img src="/icons/bars-solid.svg" style={{width: "20px"}}></img></a>
-                    <a><img src="/logo.png" style={{width: "150px"}}></img></a>
+                    <a className={styles.hamburger}><img src="/icons/bars-solid.svg" style={{width: "20px"}}></img></a>
+                    <a href="/"><img src="/logo.png" className={styles.logo}></img></a>
                     <li className={styles.socials}>
                 <a href="https://www.linkedin.com/in/matthew-r-torres/" target="_blank"><img src="/icons/Linkedin.png" width="40px"/></a>
                 <a href="https://github.com/matthew-torres-86" target="_blank"><img src="/icons/github.png" width="40px"/></a>
