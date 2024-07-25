@@ -222,7 +222,7 @@
     .pageTitle{
       padding-left: 5vw;
       padding-top: 5vh;
-      width: 80%;
+      width: 75%;
       font-size: 14vw;
     }
     .pageSubtitle{
@@ -246,7 +246,7 @@
     .pageTitle{
       padding-left: 5vw;
       padding-top: 5vh;
-      width: 90%;
+      width: 70%;
       font-size: 13vw;
     }
     .pageSubtitle{
@@ -270,7 +270,7 @@
     .pageTitle{
       padding-left: 5vw;
       padding-top: 5vh;
-      width: 80%;
+      width: 60%;
       font-size: calc(min(12vw, 25vh));
     }
     .pageSubtitle{

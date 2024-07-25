@@ -64,7 +64,8 @@ export default function Home() {
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="Matthew Torres.png"/>
           <img className={styles.backgroundImage} src="dotted-background.png"></img>
-          <h1 className={styles.pageTitle}>Matthew Torres</h1>
+          {/* <h1 className={styles.pageTitle}>Matthew Torres</h1> */}
+          <img className={styles.pageTitle} src="Matthew-Torres-Text.png"></img>
           <h2 className={styles.pageSubtitle}>Software Developer | Musician | Boston, MA</h2>
       </div>
       {/* <div className={styles.references}>
@@ -73,6 +74,7 @@ export default function Home() {
       </div> */}
       <div className={styles.bio}>
       {/* <img src="dotted-background-reverse.png" className={styles.backgroundImageReverse}></img> */}
+      <img className={styles.backgroundImage} src="dotted-background.png"></img>
         <div>
         <h2 id="bio">Bio</h2>
         <img src="bio.jpeg" className={styles.bioimg}></img>

@@ -55,7 +55,7 @@ export default function Software() {
     <div className={styles.scroller} onScroll={reveal}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="cs.png"/>
-          <h1 className={styles.pageTitle}>Software Developer</h1>
+          <img className={styles.pageTitle} src="Software-Developer-Text.png"></img>
       </div>
       <div className={styles.projectsOverview}>
         <h2>Projects</h2>
