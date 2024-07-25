@@ -5,13 +5,16 @@
   margin-left: 0;
   height: fit-content;
   display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
 }
 
 .card{
   height: 42vh;
-  max-width: 28%;
+  flex-basis: 30em;
   overflow: hidden;
-  margin: 2%;
+  /* margin: 2%; */
   position: relative;
 }
 

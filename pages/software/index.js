@@ -8,7 +8,7 @@ import Footer from "../components/footer";
 const data =
 [
   {name:"Web Programming", image:"JumboCode.png", link:"./software/web-programming"},
-  {name:"Python", image:"python.jpeg", link:"./software/python"},
+  {name:"Python", image:"coding.jpeg", link:"./software/python"},
   {name:"C Languages", image:"tufts.jpeg", link:"./software/c"},
 ]
 
@@ -56,6 +56,13 @@ export default function Software() {
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="cs.png"/>
           <img className={styles.pageTitle} src="Software-Developer-Text.png"></img>
+          <ul className={styles.pageSubtitle}>
+            <li>HTML/CSS</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>React.js/Next.js</li>
+            <li>C/C++</li>
+          </ul>
       </div>
       <div className={styles.projectsOverview}>
         <h2>Projects</h2>

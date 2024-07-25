@@ -6,7 +6,8 @@
 
 body{
   margin: 0;
-  background-color: #03725c00;
+  overflow-x: hidden;
+  /* background-color: #03725c; */
 }
 
 p {

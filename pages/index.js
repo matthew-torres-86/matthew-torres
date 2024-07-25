@@ -60,13 +60,17 @@ export default function Home() {
       </Head>
       <Navigation active={0} color={color}></Navigation>
     <body>
-    <div className={styles.scroller} onScroll={reveal}>
+    <div className={styles.scroller} onScroll={reveal} style={{backgroundColor:color, transition:"background-color 0.5s ease"}}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="Matthew Torres.png"/>
           <img className={styles.backgroundImage} src="dotted-background.png"></img>
           {/* <h1 className={styles.pageTitle}>Matthew Torres</h1> */}
           <img className={styles.pageTitle} src="Matthew-Torres-Text.png"></img>
-          <h2 className={styles.pageSubtitle}>Software Developer | Musician | Boston, MA</h2>
+          <ul className={styles.pageSubtitle}>
+            <li>Software Developer</li>
+            <li>Musican</li>
+            <li>Boston, MA</li>
+          </ul>
       </div>
       {/* <div className={styles.references}>
         <p>{REFERENCES[displayedReference]}</p>
@@ -74,7 +78,7 @@ export default function Home() {
       </div> */}
       <div className={styles.bio}>
       {/* <img src="dotted-background-reverse.png" className={styles.backgroundImageReverse}></img> */}
-      <img className={styles.backgroundImage} src="dotted-background.png"></img>
+      <img className={styles.backgroundImage} src="geometric-background.png"></img>
         <div>
         <h2 id="bio">Bio</h2>
         <img src="bio.jpeg" className={styles.bioimg}></img>
@@ -84,7 +88,7 @@ export default function Home() {
     </div>
     <div className={styles.resume}>
         <h2>Resume</h2>
-        
+        <img className={styles.backgroundImage} src="dotted-background.png"></img>
         <object className={styles.pdf} data="Matthew Torres Resume.pdf" type="application/pdf" width="100%" height="100%">
         <p>Unable to display PDF file. <a href="Matthew Torres Resume.pdf">Download</a> instead.</p>
         </object>
@@ -92,7 +96,9 @@ export default function Home() {
       </div>
       <div className={styles.portfolio}>
         <h2>View Portfolio</h2>
+        <img className={styles.backgroundImage} src="geometric-background.png"></img>
         <div className={styles.portfolioIcons}>
+          
           <a href="/software"><img src="/icons/laptop-code-solid.svg" width="150px"></img><h3>Software</h3></a>
           <a href="/music"><img src="/icons/music-solid.svg" width="120px"></img><h3>Music</h3></a>
         </div>

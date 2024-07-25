@@ -66,6 +66,9 @@
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    font: Inter, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    line-height: 1.7;
     /* text-shadow: 5px 5px 5px #333249; */
   }
 		
@@ -87,14 +90,7 @@
     bottom: 0;
     left: 0;
   }
-  .backgroundImageReverse{
-    width: 100%;
-    position:absolute;
-    z-index: -5;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-  }
+
   .active{
     display: block;
     transform: translateX(0);
@@ -199,7 +195,15 @@
     border: 3px solid #fff;
     border-radius: 100%;
     color: #fff;
+    transition: all 1s ease;
   }
+  .portfolioIcons a:hover{
+    aspect-ratio: 1;
+    border: 3px solid #2FF8C9;
+    border-radius: 100%;
+    color: #2FF8C9;
+  }
+
 
   /*Small screen sizes*/
   @media screen and (max-width: 885px){
@@ -214,6 +218,7 @@
       padding-left: 2vw;
       width: 60%;
       font-size: 3.5vw;
+      columns: 1;
     }
     .headerImage{
       max-width: 85vw;
@@ -255,6 +260,7 @@
       padding-top: 65vh;
       width: 60%;
       font-size: 2vw;
+      columns: 2;
     }
     .headerImage{
       max-width: 50vw;
@@ -280,6 +286,7 @@
       padding-top: 60vh;
       width: 70%;
       font-size: 2vw;
+      columns: 2;
     }
     .headerImage{
       max-width: 40vw;
@@ -303,8 +310,9 @@
     .pageSubtitle{
       padding-left: 8vw;
       padding-top: 65vh;
-      width: 80%;
+      width: 72%;
       font-size: 2vw;
+      columns: 2;
     }
     .headerImage{
       max-width: 40vw;

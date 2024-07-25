@@ -1,7 +1,7 @@
 import styles from "@/styles/Navigation.module.css";
 export default function Navigation({active, color}){
     return(
-    <nav className={styles.nav} style={{backgroundColor:color}}>    
+    <nav className={styles.nav} style={{backgroundColor:color, transition:"background-color 0.5s ease"}}>    
         <div className={styles.fullnav}>
         <a href = "/"><img className = {styles.logo} src="/logo.png"/></a>
         <ul>

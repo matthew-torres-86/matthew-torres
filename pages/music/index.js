@@ -54,8 +54,13 @@ export default function Home() {
     <body>
       <div className={styles.scroller} onScroll={reveal}>
       <div className={styles.backgroundLayer}>
-          <img className={styles.headerImage} src="conducting.png"/>
+          <img className={styles.headerImage} src="music.png"/>
           <img className={styles.pageTitle} src="Musician-Text.png"></img>
+          <ul className={styles.pageSubtitle}>
+            <li>Music Director</li>
+            <li>Pianist</li>
+            <li>Organist</li>
+          </ul>
       </div>
       <div className={styles.projectsOverview}>
       <h2>Projects</h2>
