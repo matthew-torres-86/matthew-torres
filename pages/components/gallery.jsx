@@ -2,6 +2,7 @@ import styles from "@/styles/Gallery.module.css";
 import { useState, useRef } from "react";
 import { CopyBlock, dracula } from 'react-code-blocks';
 import Frame from 'react-frame-component';
+import Footer from "./footer";
 
 const BLUE = "#272466"
 
@@ -117,6 +118,7 @@ export default function Gallery({data}){
                         }
                     )}
                 </div>
+                <Footer color = {BLUE}></Footer>
             </div>
         </div>
     )

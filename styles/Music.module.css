@@ -45,7 +45,14 @@
     height: 85vh;
     overflow-x: hidden;
   }
-
+  .backgroundImage{
+    width: 100%;
+    position:absolute;
+    z-index: -5;
+    opacity: 0.5;
+    bottom: 0;
+    left: 0;
+  }
   .pageTitle {
     animation: fade-left 1s ease;
     transition: all .5s linear;
@@ -99,9 +106,8 @@
   }
 
   .projectsDetail{
-    margin-top: -1em;
     background-color: #272466;
-    height: fit-content;
+    height: 80vh;
     padding: 2%;
     z-index: 5;
   }

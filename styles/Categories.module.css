@@ -33,7 +33,7 @@
   background-color: #000000aa;
   text-decoration: none;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   padding: 30px;
   bottom: 0;
   margin: 0;
@@ -44,13 +44,14 @@
   height: 100%;
   opacity: 0;
   color: #fff;
-  background-color: #00000060;
+  background-color: #00000093;
   text-decoration: none;
   position: absolute;
   z-index: 2;
   top: 0;
   margin-top: 0;
   transition: opacity .5s ease;
+  font-weight: 500;
 }
 
 .card:hover p{
@@ -112,7 +113,7 @@
           /* width: 35em; */
         }
         .card p{
-          font-size: 13px;
+          font-size: 15px;
           padding: 30px;
         }
       }

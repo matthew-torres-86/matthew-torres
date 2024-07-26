@@ -7,7 +7,7 @@ import Footer from "../components/footer";
 
 const data =
 [
-  {name:"Web Programming", image:"JumboCode.png", link:"./software/web-programming", caption: "Matthew has lead one major web programming project (pictured), and has tackled several smaller independent projects. Check out Matthew's web programming projects here!"},
+  {name:"Web Programming", image:"JumboCode.png", link:"./software/web-programming", caption: "Matthew has led one major web programming project (pictured), and has tackled several smaller independent projects. Check out Matthew's web programming projects here!"},
   {name:"Python", image:"coding.jpeg", link:"./software/python", caption: "Matthew is proficient in Python, and has worked on many Python projects both independently and for his former employers. You can see some of his work here!"},
   {name:"C Languages", image:"tufts.jpeg", link:"./software/c", caption: "At Tufts, Matthew took multiple courses in C and C++. Some of the work from these courses is on display here!"},
 ]
@@ -68,9 +68,10 @@ export default function Software() {
         <h2>Projects</h2>
         <Categories data={data}></Categories>
       </div>
+      <Footer></Footer>
       </div>
     </body>
-    <Footer></Footer>
+    
     </>
   );
 }

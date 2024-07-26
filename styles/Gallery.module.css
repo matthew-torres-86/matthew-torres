@@ -205,7 +205,7 @@
 
 .browse{
   scroll-snap-align: start;
-  min-height: 80vh;
+  min-height: 85vh;
   max-height: fit-content;
 }
 .browse h2{
@@ -220,16 +220,17 @@
   align-items: center;
   justify-content: center;
   /* overflow-x: scroll; */
-  overflow-y: hidden;
-  min-height: 80vh;
-  height: fit-content;
+  /* overflow-y: hidden; */
+  min-height: 70vh;
+  max-height: fit-content;
+
 }
 
 .thumbnails img{
   height: 15em;
   transition: height .5s ease;
   padding-left: 50px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .thumbnails img:hover{

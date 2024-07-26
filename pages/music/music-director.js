@@ -47,8 +47,9 @@ export default function MusicDirector() {
     <body>
       <div className={styles.projectsDetail}>
         <Gallery data={data}></Gallery>
+        <Footer color={BLUE}></Footer>
       </div>
-      <Footer></Footer>
+      
     </body>
     </>
   );
