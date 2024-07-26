@@ -7,9 +7,9 @@ import Footer from "../components/footer";
 
 const data =
 [
-  {name:"Web Programming", image:"JumboCode.png", link:"./software/web-programming"},
-  {name:"Python", image:"coding.jpeg", link:"./software/python"},
-  {name:"C Languages", image:"tufts.jpeg", link:"./software/c"},
+  {name:"Web Programming", image:"JumboCode.png", link:"./software/web-programming", caption: "Matthew has lead one major web programming project (pictured), and has tackled several smaller independent projects. Check out Matthew's web programming projects here!"},
+  {name:"Python", image:"coding.jpeg", link:"./software/python", caption: "Matthew is proficient in Python, and has worked on many Python projects both independently and for his former employers. You can see some of his work here!"},
+  {name:"C Languages", image:"tufts.jpeg", link:"./software/c", caption: "At Tufts, Matthew took multiple courses in C and C++. Some of the work from these courses is on display here!"},
 ]
 
 const BLUE = "#272466"
@@ -52,7 +52,7 @@ export default function Software() {
       </Head>
       <Navigation active={1} color={color}></Navigation>
     <body>
-    <div className={styles.scroller} style={{backgroundColor: BLUE}} onScroll={reveal}>
+    <div className={styles.scroller} style={{backgroundColor:color}} onScroll={reveal}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="cs.png"/>
           <img className={styles.pageTitle} src="Software-Developer-Text.png"></img>

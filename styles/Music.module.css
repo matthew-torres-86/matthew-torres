@@ -23,12 +23,14 @@
 }
 .scroller{
   height: 85vh;
+  width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   z-index: 8;
   position: fixed;
-  background-color: #03725B;
+  /* background-color: #03725B; */
   overflow-x: hidden;
+  top: 15vh;
 }
 /*Page cover photos and captions*/
   .backgroundLayer {
@@ -86,11 +88,14 @@
 
   .projectsOverview{
     scroll-snap-align: start;
-    height: 85vh;
+    height: 81vh;
     background-color: #272466;
     overflow-x: hidden;
-    padding: 2%;
+    /* padding: 2%; */
     z-index: 5;
+  }
+  .projectsOverview h2{
+    margin-left: 2%;
   }
 
   .projectsDetail{

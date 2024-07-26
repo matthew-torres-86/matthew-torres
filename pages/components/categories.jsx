@@ -12,6 +12,7 @@ export default function Categories({data}){
                 <a href={d.link}>
                     <img src={d.image}/>
                     <h3>{d.name}</h3>
+                    <p>{d.caption}</p>
                 </a>
             </div>)
         })}

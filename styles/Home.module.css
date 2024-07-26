@@ -27,7 +27,8 @@
     scroll-snap-type: y mandatory;
     z-index: 8;
     position: fixed;
-    background-color: #03725c00;
+    top: 15vh;
+    /* background-color: #03725c; */
   }
 /*Page cover photos and captions*/
   .backgroundLayer {
@@ -181,17 +182,17 @@
   .portfolioIcons{
     display: flex;
     justify-content: center;
-    padding: 0 10%;
     gap: 5%;
     width: 100%;
+    flex-wrap: wrap;
   }
   .portfolioIcons a{
-    padding: 50px;
+    margin: 10px;
+    padding: 20px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
     aspect-ratio: 1;
     border: 3px solid #fff;
     border-radius: 100%;
@@ -232,7 +233,7 @@
       margin-top: 0;
     }
     .bio p{
-      font-size: 12px;
+      font-size: 14px;
     }
     .resume{
       padding-left: 0;

@@ -23,12 +23,14 @@
 }
 .scroller{
   height: 85vh;
+  width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   z-index: 8;
   position: fixed;
-  background-color: #03725B;
+  /* background-color: #03725B; */
   overflow-x: hidden;
+  top: 15vh;
 }
 /*Page cover photos and captions*/
   .backgroundLayer {
