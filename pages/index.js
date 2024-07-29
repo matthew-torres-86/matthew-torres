@@ -78,7 +78,7 @@ export default function Home() {
       </div> */}
       <div className={styles.bio}>
       {/* <img src="dotted-background-reverse.png" className={styles.backgroundImageReverse}></img> */}
-      <img className={styles.backgroundImage} src="geometric-background.png"></img>
+      <img className={styles.backgroundImage2} src="waveform-background.png"></img>
         <div>
         <h2 id="bio">Bio</h2>
         <img src="bio.jpeg" className={styles.bioimg}></img>
@@ -96,7 +96,7 @@ export default function Home() {
       </div>
       <div className={styles.portfolio}>
         <h2>View Portfolio</h2>
-        <img className={styles.backgroundImage} src="geometric-background.png"></img>
+        <img className={styles.backgroundImage2} src="waveform-background.png"></img>
         <div className={styles.portfolioIcons}>
           
           <a href="/software"><img src="/icons/laptop-code-solid.svg"></img><h3>Software</h3></a>

@@ -62,10 +62,12 @@ export default function Home() {
             <li>Pianist</li>
             
           </ul>
+          <img className={styles.backgroundImage} src="dotted-background.png"></img>
       </div>
       <div className={styles.projectsOverview}>
       <h2>Projects</h2>
         <Categories data={data}></Categories>
+        <img className={styles.backgroundImage2} src="waveform-background.png"></img>
       </div>
       <Footer color={BLUE}></Footer>
       </div>

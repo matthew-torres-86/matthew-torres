@@ -1,4 +1,11 @@
-
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
 @keyframes fade-left {
   from {
     opacity: 0;
@@ -87,9 +94,18 @@
   .backgroundImage{
     width: 100%;
     position:absolute;
-    z-index: -5;
+    z-index: 0;
     opacity: 0.5;
     bottom: 0;
+    left: 0;
+    animation: fade-in 2s ease
+  }
+  .backgroundImage2{
+    width: 100%;
+    position:absolute;
+    z-index: 0;
+    opacity: 0.2;
+    bottom: 20%;
     left: 0;
   }
 
@@ -218,10 +234,10 @@
       font-size: 15vw;
     }
     .pageSubtitle{
-      padding-top: 35vh;
-      padding-left: 2vw;
+      left: 5vw;
+      top: 35vh;
       width: 60%;
-      font-size: 3.5vw;
+      font-size: 24px;
       columns: 1;
     }
     .headerImage{
@@ -268,11 +284,11 @@
       font-size: 14vw;
     }
     .pageSubtitle{
-      padding-left: 8vw;
-      padding-top: 65vh;
+      top: 50vh;
+      left: 10vw;
       width: 60%;
-      font-size: 2vw;
-      columns: 2;
+      font-size: 30px;
+      columns: 1;
     }
     .headerImage{
       max-width: 50vw;
@@ -299,13 +315,12 @@
       padding-left: 5vw;
       padding-top: 5vh;
       width: 70%;
-      font-size: 13vw;
     }
     .pageSubtitle{
-      padding-left: 8vw;
-      padding-top: 60vh;
+      left: 8vw;
+      top: 60vh;
       width: 70%;
-      font-size: 2vw;
+      font-size: 34px;
       columns: 2;
     }
     .headerImage{
@@ -336,10 +351,10 @@
       font-size: calc(min(12vw, 25vh));
     }
     .pageSubtitle{
-      padding-left: 8vw;
-      padding-top: 65vh;
+      left: 8vw;
+      top: 65vh;
       width: 72%;
-      font-size: 2vw;
+      font-size: 40px;
       columns: 2;
     }
     .headerImage{
@@ -362,7 +377,7 @@
     }
   }
 
-  @media screen and (max-height: 400px) {
+  @media screen and (max-height: 600px) {
     .pageSubtitle{
       font-size: 14px;
       bottom: 20px;

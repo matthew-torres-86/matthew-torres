@@ -11,6 +11,7 @@ const data =
   {name:"KeepMassBeautiful", title: "About Page",site:"https://keep-mass-beautiful.vercel.app/Demo/about", date: "September 2023 - May 2024",org: "Jumbocode", descr: "One about page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
   {name:"KeepMassBeautiful", title: "Contact Page",site:"https://keep-mass-beautiful.vercel.app/Demo/contact", date: "September 2023 - May 2024",org: "Jumbocode",descr: "One contact page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
   {name:"KeepMassBeautiful", title: "Events Page",site:"https://keep-mass-beautiful.vercel.app/Demo/events", date: "September 2023 - May 2024",org: "Jumbocode", descr: "One events page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites."},
+  {name:"Matthew Torres Portfolio", title: "Home Page", site:"https://matthew-torres.vercel.app/", date: "June 2024 - July 2024", org: "Personal", thumbnail: "/portfoliosite.png", descr: "Look familiar? This portfolio site was a major personal project, with extensive care taken to provide the best user experience. It features scroll-based and click-based animations, a cohesive look and feel, and many interactive displays for Matthew's software and music projects."},
 ]
 const BLUE = "#272466"
 

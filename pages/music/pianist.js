@@ -7,9 +7,9 @@ import Footer from "../components/footer";
 
 const data =
 [
-  {name:"June Senior Recital", video:"https://tufts.app.box.com/embed/s/b93oih36skuepx6e9il8laohpsxncuyu?", title: "All The Wasted Time", descr:"Matthew accompanied talented vocalist June Beiser at their Senior Recital, playing a plethora of works by Musical Theater's most notorious writers"},
-  {name:"June Senior Recital", video:"https://tufts.app.box.com/embed/s/re5zxe88va2xch5mthd56cygiaqetbc3?", title: "Send in the Clowns", descr:"Matthew accompanied talented vocalist June Beiser at their Senior Recital, playing a plethora of works by Musical Theater's most notorious writers"},
-  {name:"June Senior Recital", video:"https://tufts.app.box.com/embed/s/41jkhvt5oqya6ydjkokycb4s61u2cxmu?", title: "Franklin Shepard Inc.", descr:"Matthew accompanied talented vocalist June Beiser at their Senior Recital, playing a plethora of works by Musical Theater's most notorious writers"},
+  {name:"June Senior Recital", video:"https://www.youtube.com/embed/cQ8fDn6VKw0?si=AjETLDfdLsQZ_DBl", title: "All The Wasted Time", descr:"Matthew accompanied talented vocalist June Beiser at their Senior Recital, playing a plethora of works by Musical Theater's most notorious writers"},
+  {name:"June Senior Recital", video:"https://www.youtube.com/embed/M9YiCaWCkts?si=cA7FZuMP-TzuS4pr", title: "Send in the Clowns", descr:"Matthew accompanied talented vocalist June Beiser at their Senior Recital, playing a plethora of works by Musical Theater's most notorious writers"},
+  {name:"June Senior Recital", video:"https://www.youtube.com/embed/H_K6eht2AL8?si=aPrsTu8JwIeoOSr4", title: "Franklin Shepard Inc.", descr:"Matthew accompanied talented vocalist June Beiser at their Senior Recital, playing a plethora of works by Musical Theater's most notorious writers"},
 ]
 
 const BLUE = "#272466"
