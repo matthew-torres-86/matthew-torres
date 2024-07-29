@@ -67,7 +67,7 @@ export default function Gallery({data}){
 
     // beginNewTimerInterval(moveNext)
     return(
-        <div className={styles.scroller} style={{backgroundColor: BLUE}}>
+        <div className={styles.scroller} id="scroller" style={{backgroundColor: BLUE}}>
             <div className={styles.projectsGallery}>
                 <button className={styles.left} onClick={backButton}><img src="/icons/chevron-left-solid.svg"></img></button>
                 <button className={styles.right} onClick={nextButton}><img src="/icons/chevron-right-solid.svg"></img></button>
@@ -75,7 +75,7 @@ export default function Gallery({data}){
                         <div className={styles.full} >
                             {selectedCard.video && 
                             <div className={styles.video} >
-                                <iframe src={selectedCard.video} frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe> 
+                                <iframe src={selectedCard.video} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
                             }
                             {selectedCard.code && 
@@ -114,7 +114,7 @@ export default function Gallery({data}){
                     
                     {data.map((d, i)=>
                         {if(d.thumbnail)
-                            return <img src={d.thumbnail} onClick={()=>{setIndex(i); setIsPlaying(false)}}></img>
+                            return <img src={d.thumbnail} onClick={()=>{setIndex(i); setIsPlaying(false); document.getElementById('scroller').scrollTo({top:0, behavior: 'smooth'})}}></img>
                         }
                     )}
                 </div>
