@@ -188,7 +188,9 @@
   }
   .portfolioIcons a{
     margin: 10px;
-    padding: 20px 40px;
+    /* padding: 30px 50px; */
+    width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,6 +250,14 @@
       width: 100vw;
       height: 70vh;
     }
+    .portfolioIcons a{
+      width: 150px;
+      height: 150px;
+    }
+    .portfolioIcons img{
+      max-width: 80px;
+      max-height: 60px;
+    }
   }
   /*mid-sized screens*/
   @media screen and (min-width: 886px) and (max-width: 1170px) {
@@ -272,6 +282,14 @@
       width: 80%;
       opacity: 0;
       margin-left: 10%;
+    }
+    .portfolioIcons a{
+      width: 200px;
+      height: 200px;
+    }
+    .portfolioIcons img{
+      max-width: 100px;
+      max-height: 80px;
     }
   }
 
@@ -299,6 +317,14 @@
       opacity: 0;
       margin-left: 15%;
     }
+    .portfolioIcons a{
+      width: 250px;
+      height: 250px;
+    }
+    .portfolioIcons img{
+      max-width: 120px;
+      max-height: 90px;
+    }
   }
 
   /*Large screen sizes*/
@@ -325,4 +351,22 @@
       width: 60%;
       margin-left: 20%;
     }
+
+    .portfolioIcons a{
+      width: 300px;
+      height: 300px;
+    }
+    .portfolioIcons img{
+      max-width: 150px;
+      max-height: 120px;
+    }
+  }
+
+  @media screen and (max-height: 400px) {
+    .pageSubtitle{
+      font-size: 14px;
+      bottom: 20px;
+      left: 100px;
+    }
+
   }

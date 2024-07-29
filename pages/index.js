@@ -90,7 +90,7 @@ export default function Home() {
         <h2>Resume</h2>
         <img className={styles.backgroundImage} src="dotted-background.png"></img>
         <object className={styles.pdf} data="Matthew Torres Resume.pdf" type="application/pdf" width="100%" height="100%">
-        <p>Unable to display PDF file. <a href="Matthew Torres Resume.pdf">Download</a> instead.</p>
+          <embed src="https://drive.google.com/file/d/1tXmrqTV1ngvva86c96wv1DGi3b4hQhAq/preview?usp=sharing" width="100%" height="600px"/> 
         </object>
         
       </div>
@@ -99,8 +99,8 @@ export default function Home() {
         <img className={styles.backgroundImage} src="geometric-background.png"></img>
         <div className={styles.portfolioIcons}>
           
-          <a href="/software"><img src="/icons/laptop-code-solid.svg" width="150px"></img><h3>Software</h3></a>
-          <a href="/music"><img src="/icons/music-solid.svg" width="120px"></img><h3>Music</h3></a>
+          <a href="/software"><img src="/icons/laptop-code-solid.svg"></img><h3>Software</h3></a>
+          <a href="/music"><img src="/icons/music-solid.svg" ></img><h3>Music</h3></a>
         </div>
         
       </div>
