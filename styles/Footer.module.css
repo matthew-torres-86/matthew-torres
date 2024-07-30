@@ -26,3 +26,20 @@
 .footer li a {
   font-size: 14px;
 }
+
+@media screen and (max-width: 885px) {
+  .copyright{
+    /* background-color: #545454; */
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 886px) {
+  .copyright{
+    /* background-color: #545454; */
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+}

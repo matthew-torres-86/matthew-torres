@@ -69,6 +69,7 @@
   left: 40px;
   position: absolute;
   box-sizing: border-box;
+  border-radius: 10px;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font: Inter, Arial, Helvetica, sans-serif;
@@ -209,8 +210,9 @@
 @media screen and (max-width: 885px) {
   .pageTitle {
     padding-left: 0;
+    left: 5px;
     padding-top: 5vh;
-    width: 90%;
+    width: 98%;
   }
   .pageSubtitle {
     left: 0;
@@ -220,8 +222,9 @@
     columns: 1;
   }
   .headerImage {
-    max-width: 75vw;
+    max-width: 70vw;
     max-height: 60vh;
+    right: -30px;
   }
   .bio {
     display: block;
@@ -243,7 +246,7 @@
   }
   .pdf {
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
   }
   .portfolioIcons a {
     width: 150px;
@@ -271,6 +274,7 @@
   .headerImage {
     max-width: 50vw;
     max-height: 80vh;
+    right: 0;
   }
   .pdf {
     width: 80%;
@@ -304,6 +308,7 @@
   .headerImage {
     max-width: 40vw;
     max-height: 80vh;
+    right: 0;
   }
   .pdf {
     width: 70%;
@@ -338,6 +343,7 @@
   .headerImage {
     max-width: 40vw;
     max-height: 80vh;
+    right: 0;
   }
   .pdf {
     opacity: 0;
