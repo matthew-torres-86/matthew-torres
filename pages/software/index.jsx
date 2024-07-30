@@ -97,7 +97,7 @@ export default function Software() {
               <li>HTML/CSS</li>
               <li>Python</li>
               <li>JavaScript</li>
-              <li>React.js/Next.js</li>
+              <li>React</li>
               <li>C/C++</li>
             </ul>
           </div>

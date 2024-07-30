@@ -159,7 +159,7 @@
 }
 .mobilenav .socials img {
   width: 100%;
-  max-width: 30px;
+  max-width: 40px;
 }
 .sub {
   margin-left: 2em;
@@ -223,18 +223,8 @@
   transition: rotate 0.5s ease;
 }
 /*Media Queries*/
-/*Super Small screen sizes*/
-@media screen and (max-width: 649px) {
-  .mobilenav {
-    display: block;
-  }
-
-  .fullnav {
-    display: none;
-  }
-}
 /*Small screen sizes*/
-@media screen and (max-width: 885px) and (min-width: 650px) {
+@media screen and (max-width: 885px) {
   .mobilenav {
     display: block;
   }
@@ -245,11 +235,11 @@
 /*mid-sized screens*/
 @media screen and (min-width: 886px) and (max-width: 1170px) {
   .mobilenav {
-    display: none;
+    display: block;
   }
 
   .fullnav {
-    display: block;
+    display: none;
   }
 }
 

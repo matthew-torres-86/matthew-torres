@@ -74,6 +74,8 @@
   font: Inter, Arial, Helvetica, sans-serif;
   font-weight: bold;
   line-height: 1.7;
+  list-style-type:none;
+  background-color: #272466;
   /* text-shadow: 5px 5px 5px #333249; */
 }
 
@@ -81,11 +83,10 @@
   animation: fade-right 1s ease;
   transition: all 0.5s linear;
   float: right;
-  bottom: 0;
-  right: 0;
+  bottom:0;
+  right: 10px;
   position: absolute;
   z-index: 3;
-  filter: drop-shadow(5px 5px 5px #333249);
 }
 .backgroundImage {
   width: 100%;
@@ -155,7 +156,7 @@
 }
 
 .pdf {
-  height: 70vh;
+  height: 90%;
   opacity: 1;
   transition: opacity 1s ease-in;
 }
@@ -207,21 +208,20 @@
 /*Small screen sizes*/
 @media screen and (max-width: 885px) {
   .pageTitle {
-    padding-left: 5vw;
+    padding-left: 0;
     padding-top: 5vh;
-    width: 80%;
-    font-size: 15vw;
+    width: 90%;
   }
   .pageSubtitle {
-    left: 5vw;
-    top: 35vh;
-    width: 60%;
-    font-size: 24px;
+    left: 0;
+    top: 50vh;
+    width: 100%;
+    font-size: 20px;
     columns: 1;
   }
   .headerImage {
-    max-width: 85vw;
-    max-height: 70vh;
+    max-width: 75vw;
+    max-height: 60vh;
   }
   .bio {
     display: block;
@@ -260,12 +260,11 @@
     padding-left: 5vw;
     padding-top: 5vh;
     width: 75%;
-    font-size: 14vw;
   }
   .pageSubtitle {
     top: 50vh;
     left: 10vw;
-    width: 60%;
+    width: 90%;
     font-size: 30px;
     columns: 1;
   }
