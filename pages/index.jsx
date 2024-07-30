@@ -89,7 +89,7 @@ export default function Home() {
     <div className={styles.resume}>
         <h2>Resume</h2>
         <img className={styles.backgroundImage} src="dotted-background.png"></img>
-        <object className={styles.pdf} data="Matthew Torres Resume.pdf#view=Fit" type="application/pdf" width="100%" height="100%">
+        <object className={styles.pdf} data="Matthew Torres Resume.pdf#view=FitW" type="application/pdf" width="100%" height="100%">
           <embed src="https://drive.google.com/file/d/1tXmrqTV1ngvva86c96wv1DGi3b4hQhAq/preview?usp=sharing" width="100%" height="600px"/> 
         </object>
         
