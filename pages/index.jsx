@@ -63,8 +63,6 @@ export default function Home() {
     <div className={styles.scroller} onScroll={reveal} style={{backgroundColor:color, transition:"background-color 0.5s ease"}}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="Matthew Torres.png"/>
-          <img className={styles.backgroundImage} src="dotted-background.png"></img>
-          {/* <h1 className={styles.pageTitle}>Matthew Torres</h1> */}
           <img className={styles.pageTitle} src="Matthew-Torres-Text.png"></img>
           <ul className={styles.pageSubtitle}>
             <li>Software Developer</li>
@@ -77,8 +75,6 @@ export default function Home() {
         <p>-{REFERENCES[displayedReference]}</p>
       </div> */}
       <div className={styles.bio}>
-      {/* <img src="dotted-background-reverse.png" className={styles.backgroundImageReverse}></img> */}
-      <img className={styles.backgroundImage2} src="waveform-background.png"></img>
         <div>
         <h2 id="bio">Bio</h2>
         <img src="bio.jpeg" className={styles.bioimg}></img>
@@ -88,7 +84,6 @@ export default function Home() {
     </div>
     <div className={styles.resume}>
         <h2>Resume</h2>
-        <img className={styles.backgroundImage} src="dotted-background.png"></img>
         <object className={styles.pdf} data="Matthew Torres Resume.pdf#view=FitW" type="application/pdf" width="100%" height="100%">
           <embed src="https://drive.google.com/file/d/1tXmrqTV1ngvva86c96wv1DGi3b4hQhAq/preview?usp=sharing" width="100%" height="600px"/> 
         </object>
@@ -96,7 +91,6 @@ export default function Home() {
       </div>
       <div className={styles.portfolio}>
         <h2>View Portfolio</h2>
-        <img className={styles.backgroundImage2} src="waveform-background.png"></img>
         <div className={styles.portfolioIcons}>
           
           <a href="/software"><img src="/icons/laptop-code-solid.svg"></img><h3>Software</h3></a>

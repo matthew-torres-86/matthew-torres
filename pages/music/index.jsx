@@ -56,7 +56,7 @@ export default function Home() {
       </Head>
       <Navigation color={color}></Navigation>
     <body>
-      <div className={styles.scroller} id="scroller" onScroll={reveal} style={{backgroundColor:color}}>
+      <div className={styles.scroller} id="scroller" onScroll={reveal} style={{backgroundColor:color,  transition:"background-color 0.5s ease"}}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="music.png"/>
           <img className={styles.pageTitle} src="Musician-Text.png"></img>
@@ -66,12 +66,10 @@ export default function Home() {
             <li>Pianist</li>
             
           </ul>
-          <img className={styles.backgroundImage} src="dotted-background.png"></img>
       </div>
       <div className={styles.projectsOverview}>
       <h2>Projects</h2>
         <Categories data={data} reveal={catsReveal}></Categories>
-        <img className={styles.backgroundImage2} src="waveform-background.png"></img>
       </div>
       <Footer color={BLUE}></Footer>
       </div>

@@ -47,7 +47,7 @@
     padding: 0;
     top: 0;
     z-index: 0;
-    background-color: #03725B;
+    /* background-color: #03725B; */
     width: 100%;
     height: calc(100vh - 8em);
     overflow-x: hidden;
@@ -121,7 +121,7 @@
   .projectsOverview{
     /* margin-top: -1em; */
     scroll-snap-align: start;
-    background-color: #272466;
+    /* background-color: #272466; */
     width: 100%;
     overflow-x: hidden;
     position: relative;

@@ -56,7 +56,7 @@ export default function Software() {
       </Head>
       <Navigation active={1} color={color}></Navigation>
     <body>
-    <div className={styles.scroller} id="scroller" style={{backgroundColor:color}} onScroll={reveal}>
+    <div className={styles.scroller} id="scroller" style={{backgroundColor:color,  transition:"background-color 0.5s ease"}} onScroll={reveal}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="cs.png"/>
           <img className={styles.pageTitle} src="Software-Developer-Text.png"></img>
@@ -67,12 +67,10 @@ export default function Software() {
             <li>React.js/Next.js</li>
             <li>C/C++</li>
           </ul>
-          <img className={styles.backgroundImage} src="dotted-background.png"></img>
       </div>
       <div className={styles.projectsOverview}>
         <h2>Projects</h2>
         <Categories data={data} reveal={catsReveal}></Categories>
-        <img className={styles.backgroundImage2} src="waveform-background.png"></img>
       </div>
       <Footer></Footer>
       </div>

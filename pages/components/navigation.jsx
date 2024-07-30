@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Navigation({active, color}){
     const [mobileDrop, setMobileDrop] = useState(false);
     return(
-    <nav className={styles.nav} style={{backgroundColor:color, transition:"color 0.5s ease"}}>    
+    <nav className={styles.nav} style={{backgroundColor:color, transition:"background-color 0.5s ease"}}>    
         <div className={styles.fullnav}>
         <a href = "/"><img className = {styles.logo} src="/logo.png"/></a>
         <ul>
@@ -16,7 +16,7 @@ export default function Navigation({active, color}){
             </li>
             <li className = {styles.dropdown}>
                 <a href="/music">MUSICIAN</a>
-                <div className={styles.dropdownContent}  style={{backgroundColor:color}}>
+                <div className={styles.dropdownContent}  style={{backgroundColor:color, transition:"background-color 0.5s ease"}}>
                     <a href="/music/music-director">Music Director</a>
                     <a href="/music/pianist">Pianist</a>
                     <a href="/music/organist">Organist</a>
@@ -24,7 +24,7 @@ export default function Navigation({active, color}){
             </li>
             <li className = {styles.dropdown}>
                 <a href="/software">SOFTWARE DEVELOPER</a>
-                <div className={styles.dropdownContent}  style={{backgroundColor:color}}>
+                <div className={styles.dropdownContent}  style={{backgroundColor:color, transition:"background-color 0.5s ease"}}>
                     <a href="/software/web-programming">Web Programming</a>
                     <a href="/software/c">C Languages</a>
                     <a href="/software/python">Python</a>
@@ -50,7 +50,7 @@ export default function Navigation({active, color}){
             </li>
                     {/* <a href = "/"><img className = {styles.logo} src="/logo.png"/></a> */}
                 </div>
-                  <div className={mobileDrop? styles.dropdownContent: styles.hidden} style={{backgroundColor:color}}>
+                  <div className={mobileDrop? styles.dropdownContent: styles.hidden} style={{backgroundColor:color, transition:"background-color 0.5s ease"}}>
                 
                     <a href="/software">SOFTWARE DEVELOPER</a>
                         <a href="/software/web-programming" className={styles.sub}>Web Programming</a>
