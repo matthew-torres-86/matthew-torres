@@ -15,6 +15,9 @@
   overflow: hidden;
   /* margin: 2%; */
   position: relative;
+  transform: translateX(150px);
+  opacity: 0;
+  transition: all .5s ease;
 }
 
 .card a{
@@ -53,7 +56,20 @@
   transition: opacity .5s ease;
   font-weight: 500;
 }
-
+.card.active1{
+  transform: translateY(0);
+  opacity: 1;
+}
+.card.active2{
+  transform: translateY(0);
+  transition-delay: 0.33s;
+  opacity: 1;
+}
+.card.active3{
+  transform: translateY(0);
+  transition-delay: 0.66s;
+  opacity: 1;
+}
 .card:hover p{
   opacity:1;
 }

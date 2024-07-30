@@ -29,7 +29,7 @@
   }
 }
 .scroller{
-  height: 85vh;
+  height: calc(100vh - 8em);
   width: 100%;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
@@ -37,7 +37,7 @@
   position: fixed;
   /* background-color: #03725B; */
   overflow-x: hidden;
-  top: 15vh;
+  top: 8em;
 }
 /*Page cover photos and captions*/
   .backgroundLayer {
@@ -49,7 +49,7 @@
     z-index: 0;
     background-color: #03725B;
     width: 100%;
-    height: 85vh;
+    height: calc(100vh - 8em);
     overflow-x: hidden;
   }
   .backgroundImage{
@@ -125,7 +125,7 @@
     width: 100%;
     overflow-x: hidden;
     position: relative;
-    height: 80vh;
+    height: calc(100vh - 10em);
     padding: 2%;
     z-index: 5;
   }

@@ -20,7 +20,7 @@ const GREEN = "#03725B"
 export default function Software() {
   const [hydrated, setHydrated] = useState(false);
   const [color, setColor] = useState(GREEN)
-
+  const [catsReveal, setCatsReveal] =useState(false)
   function reveal() {
     var reveals = document.querySelectorAll(`.${styles.backgroundLayer}, .${styles.projectsOverview}`);
     console.log(reveals);
@@ -32,7 +32,11 @@ export default function Software() {
       if (elementTop < windowHeight - elementVisible && elementBottom >= windowHeight - elementVisible) {
         if(i==0){setColor(GREEN)}
         else{setColor(BLUE)}
+        if(i==1){
+          setCatsReveal(true)
+        }
       }
+      
     }
   }
   useEffect(() => {
@@ -52,7 +56,7 @@ export default function Software() {
       </Head>
       <Navigation active={1} color={color}></Navigation>
     <body>
-    <div className={styles.scroller} style={{backgroundColor:color}} onScroll={reveal}>
+    <div className={styles.scroller} id="scroller" style={{backgroundColor:color}} onScroll={reveal}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="cs.png"/>
           <img className={styles.pageTitle} src="Software-Developer-Text.png"></img>
@@ -67,7 +71,7 @@ export default function Software() {
       </div>
       <div className={styles.projectsOverview}>
         <h2>Projects</h2>
-        <Categories data={data}></Categories>
+        <Categories data={data} reveal={catsReveal}></Categories>
         <img className={styles.backgroundImage2} src="waveform-background.png"></img>
       </div>
       <Footer></Footer>

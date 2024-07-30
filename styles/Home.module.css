@@ -27,29 +27,28 @@
   }
 }
   .scroller{
-    height: 85vh;
+    height: calc(100vh - 8em);
     width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-snap-type: y mandatory;
     z-index: 8;
     position: fixed;
-    top: 15vh;
+    top: 8em;
     /* background-color: #03725c; */
   }
 /*Page cover photos and captions*/
   .backgroundLayer {
     scroll-snap-align: start;
     display: inline-block; 
-    overflow-x: hidden;
+    overflow: hidden;
     margin: 0;
     padding: 0;
     top: 0;
     z-index: 0;
     background-color: #03725c;
     width: 100%;
-    /* height: fit-content; */
-    height: 85vh;
+    height: calc(100vh - 8em);
 
   }
 
@@ -113,28 +112,13 @@
     display: block;
     transform: translateX(0);
   }
-
-  /* .references{
-    margin-top: -1em;
-    background-color: #272466;
-    min-height: 20em;
-    padding: 2%;
-    z-index: 5;
-  }
-  .references p{
-    color: #fff;
-    font-size: 24pt;
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-  } */
   .bio{
     position: relative;
     padding: 2% 5%;
     gap: 2%;
     display: flex;
     background-color: #272466;
-    min-height: 85vh;
+    min-height: calc(100vh - 8em);
     width: 100%;
     max-height: fit-content;
     scroll-snap-align: start;
@@ -168,7 +152,7 @@
     position: relative;
     scroll-snap-align: start;
     padding: 2% 5%;
-    height: 85vh;
+    height: calc(100vh - 8em);
     background-color: #03725B;
     z-index: 5;
   }
@@ -190,7 +174,7 @@
     background-color: #272466;
     width: 100%;
     overflow-x: hidden;
-    height: 81vh;
+    height: calc(100vh - 10em);
     padding: 2% 5%;
     z-index: 5;
 
@@ -201,6 +185,7 @@
     gap: 5%;
     width: 100%;
     flex-wrap: wrap;
+    
   }
   .portfolioIcons a{
     margin: 10px;
@@ -379,9 +364,7 @@
 
   @media screen and (max-height: 600px) {
     .pageSubtitle{
-      font-size: 14px;
-      bottom: 20px;
-      left: 100px;
+      display: none;
     }
 
   }

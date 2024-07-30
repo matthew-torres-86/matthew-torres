@@ -18,7 +18,8 @@ const data =
 export default function Home() {
   const [hydrated, setHydrated] = useState(false);
   const [color, setColor] = useState(GREEN)
-  
+  const [catsReveal, setCatsReveal] =useState(false)
+
   function reveal() {
     var reveals = document.querySelectorAll(`.${styles.backgroundLayer}, .${styles.projectsOverview}`);
     console.log(reveals);
@@ -30,6 +31,9 @@ export default function Home() {
       if (elementTop < windowHeight - elementVisible && elementBottom >= windowHeight - elementVisible) {
         if(i==0){setColor(GREEN)}
         else{setColor(BLUE)}
+        if(i==1){
+          setCatsReveal(true)
+        }
       }
     }
   }
@@ -52,7 +56,7 @@ export default function Home() {
       </Head>
       <Navigation color={color}></Navigation>
     <body>
-      <div className={styles.scroller} onScroll={reveal} style={{backgroundColor:color}}>
+      <div className={styles.scroller} id="scroller" onScroll={reveal} style={{backgroundColor:color}}>
       <div className={styles.backgroundLayer}>
           <img className={styles.headerImage} src="music.png"/>
           <img className={styles.pageTitle} src="Musician-Text.png"></img>
@@ -66,7 +70,7 @@ export default function Home() {
       </div>
       <div className={styles.projectsOverview}>
       <h2>Projects</h2>
-        <Categories data={data}></Categories>
+        <Categories data={data} reveal={catsReveal}></Categories>
         <img className={styles.backgroundImage2} src="waveform-background.png"></img>
       </div>
       <Footer color={BLUE}></Footer>

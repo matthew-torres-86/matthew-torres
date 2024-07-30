@@ -35,18 +35,14 @@
     margin: 0;
     display: inline-block;
     width: 100vw;
-    height: 15vh;
+    height: 8em;
     position: sticky;
     top: 0;
     z-index: 10;
+    vertical-align: middle;
   }
   .nav ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /* padding-top: 40px; */
-    height: 100%;
-    vertical-align: middle;
   }
   .nav li{
     float: right; 
@@ -70,54 +66,54 @@
   } 
 
   /* Full-sized Navigation Styles */
-  /* .fullnav{
-    background-color: #03725B;
-  } */
+  .fullnav{
+    height: 100%;
+  }
   .fullnav .logo{
     width: 10em;
-    margin-top: 5vh;
-    margin-left: 1vw;
+    margin-left: 3vw;
     padding: 0px;
   }
   .fullnav ul{
+    margin-top: 3em;
+    vertical-align: middle;
     display: inline-block;
     width: 80vw;
+    height: 100%;
+  }
+  .fullnav li{
+    height: 3em;
+    width: fit-content;
   }
   .fullnav li a{
+    height: 100%;
     font-size: 14pt;
-    /* background-color: #03725B; */
     float: right;
-    /* width: fit-content; */
-    /* text-align: center; */
-    /* min-width: 180px; */
   }
   .fullnav .socials{
-    /* float: right; */
-    /* margin-left: 5%; */
     display: flex;
     background: none;
-    /* width: 15vw; */
 }
 .fullnav .socials a{
   padding: 2px;
   margin: 0;
 }
 .fullnav ul .dropdown{
-  /* width: 25%; */
   padding: 8px 10% 8px 0;
   text-align: left;
   float: right;
-  width: max-content;
+  width: fit-content;
 }
 .fullnav ul .dropdownContent{
   display: none;
   position: absolute;
-  z-index: 10;
+  z-index: 4;
   text-align: left;
-  width: inherit;
-  top: 8vh;
-  padding-top: 1em;
-  /* margin-left: -1em; */
+  width: 18em;
+  top: 6em;
+  margin: 0;
+  /* padding-top: 1em; */
+  margin-left: -1em;
 }
   /* Mobile Navigation Styles */
   .mobilenav{
@@ -204,7 +200,7 @@
     padding: 1em;
   }
 
-  .fullnav.dropdown:hover .dropdownContent{
+  .fullnav li:hover .dropdownContent{
     display: flex;
     flex-direction: column;
   } 
