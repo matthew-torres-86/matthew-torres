@@ -17,21 +17,21 @@
   }
 }
 
-.scroller{
-    height: calc(100vh - 8em);
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-    z-index: 8;
-    position: fixed;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #272466;
-    left: 0;
-    top: 8em;
+.scroller {
+  height: calc(100vh - 8em);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  z-index: 8;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #272466;
+  left: 0;
+  top: 8em;
 }
 
-.projectsGallery{
+.projectsGallery {
   scroll-snap-align: start;
   background-color: #272466;
   width: 100%;
@@ -44,7 +44,8 @@
   vertical-align: middle;
 }
 
-.left, .right{
+.left,
+.right {
   margin-top: 35vh;
   position: absolute;
   height: 8em;
@@ -54,7 +55,7 @@
   padding: 2em;
   z-index: 5;
 }
-.showInfo{
+.showInfo {
   width: 4em;
   padding: 15px;
   position: relative;
@@ -64,17 +65,17 @@
   border-radius: 50% 0 0 50%;
   z-index: 8;
 }
-.left{
+.left {
   left: 0;
 }
-.right{
+.right {
   right: 0;
 }
-.projectsGallery button:hover{
+.projectsGallery button:hover {
   background: #01010177;
 }
 
-.card{
+.card {
   width: 100%;
   height: calc(100vh - 8em);
   margin: 0;
@@ -88,13 +89,13 @@
   /* background-color: red; */
 }
 
-.preview{
+.preview {
   transition: all 1s ease;
   transition-delay: 0.5s;
   height: 100%;
 }
 
-.full{
+.full {
   /* margin: 0;
   padding: 0; */
   position: absolute;
@@ -106,13 +107,13 @@
   transition-delay: 0.5s; */
 }
 
-.laptop{
+.laptop {
   position: relative;
   transition: width 1s ease;
   transition: height 1s ease;
   transition-delay: 0.5s;
 }
-.video{
+.video {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -123,7 +124,7 @@
   /* transition: all 1s ease;
   transition-delay: 0.5s; */
 }
-.video iframe{
+.video iframe {
   /* margin-left: 2.5%; */
   padding: 0;
   width: 100%;
@@ -132,14 +133,14 @@
   height: 100%;
   border: none;
 }
-.laptop img{
+.laptop img {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 3;
 }
 
-.laptop iframe{
+.laptop iframe {
   position: absolute;
   width: 70%;
   left: 15%;
@@ -148,10 +149,9 @@
   z-index: 3;
 }
 
-
-.info{
+.info {
   /* margin-top: 10vh; */
-  animation: fade-left .5s ease;
+  animation: fade-left 0.5s ease;
   z-index: 3;
   position: absolute;
   right: 0;
@@ -159,9 +159,8 @@
   /* padding: 5%; */
   height: 90%;
   width: 100%;
-  
 }
-.infoText{
+.infoText {
   position: absolute;
   padding: 3%;
   top: 0;
@@ -170,7 +169,7 @@
   height: 100%;
 }
 
-.infoMinimized{
+.infoMinimized {
   left: 100%;
   position: absolute;
   top: 0;
@@ -180,20 +179,22 @@
   height: 100%;
 }
 
-.info h2, .info p{
+.info h2,
+.info p {
   color: #fff;
   text-decoration: none;
   position: relative;
 }
 
-.infoMinimized h2, .infoMinimized p{
+.infoMinimized h2,
+.infoMinimized p {
   overflow: hidden;
   color: #fff;
   text-decoration: none;
   animation: slide-out 1s ease;
 }
 
-.caption{
+.caption {
   color: #8e8e8e;
   font-size: 10px;
   text-decoration: none;
@@ -204,16 +205,16 @@
   text-align: center;
 }
 
-.browse{
+.browse {
   scroll-snap-align: start;
   min-height: 85vh;
   max-height: fit-content;
 }
-.browse h2{
+.browse h2 {
   margin-left: 1em;
 }
 
-.thumbnails{
+.thumbnails {
   background-color: #272466;
   display: flex;
   flex-direction: row;
@@ -224,154 +225,153 @@
   /* overflow-y: hidden; */
   min-height: 70vh;
   max-height: fit-content;
-
 }
 
-.thumbnails img{
+.thumbnails img {
   height: 15em;
-  transition: height .5s ease;
+  transition: height 0.5s ease;
   padding-left: 50px;
   /* padding-top: 20px; */
 }
 
-.thumbnails img:hover{
+.thumbnails img:hover {
   height: 17em;
 }
 
-  /*Small screen sizes*/
-  @media screen and (max-width: 885px){
-    .card{
-      flex-direction: column;
-    }
-    .preview{
-      width: 100%;
-      height: 40vh;
-    }
-    .showInfo{
-      margin-left: -4em;
-      background-color: #272466ab;
-    }
-    .info{
-      width: calc(100% - 4em);
-    }
-    .full{
-      width: 100%;
-      height: 75vh;
-    }
-    .laptop{
-      max-width: 100%;
-      max-height: 90%;
-      aspect-ratio: 1/1.6;
-    }
-    .laptop iframe{
-      position: absolute;
-      width: 66%;
-      border-radius: 50px;
-      left: 17%;
-      height: 92%;
-      margin-top: 2vh;
-      z-index: 3;
-    }
+/*Small screen sizes*/
+@media screen and (max-width: 885px) {
+  .card {
+    flex-direction: column;
   }
-  /*mid-sized screens*/
-  @media screen and (min-width: 886px) and (max-width: 1170px) {
-    .card{
-      flex-direction: column;
-    }
-    .full{
-      width: 100%;
-      height: 75vh;
-    }
-    .showInfo{
-      margin-left: -4em;
-      background-color: #272466ab;
-    }
-    .info{
-      width: calc(100% - 4em);
-    }
-    .laptop{
-      max-width: 80%;
-      max-height: 70%;
-      aspect-ratio: 2;
-    }
-    .infoMinimized h2, .infoMinimized p{
-      width: 100%;
-    }
-    .laptop iframe{
-      position: absolute;
-      width: 70%;
-      left: 15%;
-      height: 80%;
-      margin-top: 2vh;
-      z-index: 3;
-    }
+  .preview {
+    width: 100%;
+    height: 40vh;
   }
+  .showInfo {
+    margin-left: -4em;
+    background-color: #272466ab;
+  }
+  .info {
+    width: calc(100% - 4em);
+  }
+  .full {
+    width: 100%;
+    height: 75vh;
+  }
+  .laptop {
+    max-width: 100%;
+    max-height: 90%;
+    aspect-ratio: 1/1.6;
+  }
+  .laptop iframe {
+    position: absolute;
+    width: 66%;
+    border-radius: 50px;
+    left: 17%;
+    height: 92%;
+    margin-top: 2vh;
+    z-index: 3;
+  }
+}
+/*mid-sized screens*/
+@media screen and (min-width: 886px) and (max-width: 1170px) {
+  .card {
+    flex-direction: column;
+  }
+  .full {
+    width: 100%;
+    height: 75vh;
+  }
+  .showInfo {
+    margin-left: -4em;
+    background-color: #272466ab;
+  }
+  .info {
+    width: calc(100% - 4em);
+  }
+  .laptop {
+    max-width: 80%;
+    max-height: 70%;
+    aspect-ratio: 2;
+  }
+  .infoMinimized h2,
+  .infoMinimized p {
+    width: 100%;
+  }
+  .laptop iframe {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 80%;
+    margin-top: 2vh;
+    z-index: 3;
+  }
+}
 
-  /*Upper-mid screen sizes*/
-  @media screen and (min-width: 1171px) and (max-width: 1500px){
-    .card{
-      flex-direction: row;
-    }
-    .preview{
-      width: 50%;
-      height: 60vh;
-      margin-top: 10vh;
-    }
-    .full{
-      height: 75vh;
-    }
-    .showInfo{
-      margin-left: -4em;
-      background-color: #272466ab;
-    }
-    .info{
-      width: 50%;
-    }
-    .laptop{
-      max-width: 80%;
-      max-height: 80%;
-      aspect-ratio: 3.5/2;
-    }
-    .laptop iframe{
-      position: absolute;
-      width: 70%;
-      left: 15%;
-      height: 80%;
-      margin-top: 2vh;
-      z-index: 3;
-    }
+/*Upper-mid screen sizes*/
+@media screen and (min-width: 1171px) and (max-width: 1500px) {
+  .card {
+    flex-direction: row;
   }
+  .preview {
+    width: 50%;
+    height: 60vh;
+    margin-top: 10vh;
+  }
+  .full {
+    height: 75vh;
+  }
+  .showInfo {
+    margin-left: -4em;
+    background-color: #272466ab;
+  }
+  .info {
+    width: 50%;
+  }
+  .laptop {
+    max-width: 80%;
+    max-height: 80%;
+    aspect-ratio: 3.5/2;
+  }
+  .laptop iframe {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 80%;
+    margin-top: 2vh;
+    z-index: 3;
+  }
+}
 
-  /*Large screen sizes*/
-  @media screen and (min-width: 1501px){
-    .card{
-      flex-direction: row;
-    }
-    .full{
-      height: 75vh;
-    }
-    .full .video{
-      height: 100%;
-    }
-    .laptop{
-      max-width: 100%;
-      max-height: 110%;
-      aspect-ratio: 3.5/2;
-    }
-    .laptop iframe{
-      position: absolute;
-      width: 70%;
-      left: 15%;
-      height: 80%;
-      margin-top: 2vh;
-      z-index: 3;
-    }
-    .showInfo{
-      margin-left: -4em;
-      background-color: #272466ab;
-    }
-    .info{
-      width: 50%;
-    }
-  
+/*Large screen sizes*/
+@media screen and (min-width: 1501px) {
+  .card {
+    flex-direction: row;
   }
+  .full {
+    height: 75vh;
+  }
+  .full .video {
+    height: 100%;
+  }
+  .laptop {
+    max-width: 100%;
+    max-height: 110%;
+    aspect-ratio: 3.5/2;
+  }
+  .laptop iframe {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 80%;
+    margin-top: 2vh;
+    z-index: 3;
+  }
+  .showInfo {
+    margin-left: -4em;
+    background-color: #272466ab;
+  }
+  .info {
+    width: 50%;
+  }
+}

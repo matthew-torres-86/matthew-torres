@@ -26,343 +26,338 @@
     transform: translateX(0);
   }
 }
-  .scroller{
-    height: calc(100vh - 8em);
-    width: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-    z-index: 8;
-    position: fixed;
-    top: 8em;
-    /* background-color: #03725c; */
-  }
+.scroller {
+  height: calc(100vh - 8em);
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  z-index: 8;
+  position: fixed;
+  top: 8em;
+  /* background-color: #03725c; */
+}
 /*Page cover photos and captions*/
-  .backgroundLayer {
-    scroll-snap-align: start;
-    display: inline-block; 
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    z-index: 0;
-    /* background-color: #03725c; */
-    width: 100%;
-    height: calc(100vh - 8em);
+.backgroundLayer {
+  scroll-snap-align: start;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  z-index: 0;
+  /* background-color: #03725c; */
+  width: 100%;
+  height: calc(100vh - 8em);
+}
 
-  }
+.pageTitle {
+  animation: fade-left 1s ease;
+  transition: all 0.5s linear;
+  float: left;
+  margin: 0;
+  left: 40px;
+  position: absolute;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.pageSubtitle {
+  animation: fade-left 1s ease;
+  transition: all 0.5s linear;
+  float: left;
+  margin: 0;
+  left: 40px;
+  position: absolute;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font: Inter, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  line-height: 1.7;
+  /* text-shadow: 5px 5px 5px #333249; */
+}
 
+.headerImage {
+  animation: fade-right 1s ease;
+  transition: all 0.5s linear;
+  float: right;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 3;
+  filter: drop-shadow(5px 5px 5px #333249);
+}
+.backgroundImage {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.5;
+  bottom: 0;
+  left: 0;
+  animation: fade-in 2s ease;
+}
+.backgroundImage2 {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  opacity: 0.2;
+  bottom: 20%;
+  left: 0;
+}
+
+.active {
+  display: block;
+  transform: translateX(0);
+}
+.bio {
+  position: relative;
+  padding: 2% 5%;
+  gap: 2%;
+  display: flex;
+  /* background-color: #272466; */
+  min-height: calc(100vh - 8em);
+  width: 100%;
+  max-height: fit-content;
+  scroll-snap-align: start;
+  z-index: 1;
+}
+.biotext {
+  /* animation: fade-right 1s ease; */
+  margin-top: 10vh;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.bio p {
+  color: #fff;
+}
+.biotext.active {
+  opacity: 1;
+}
+.bioimg {
+  margin-top: 5vh;
+  max-height: 60%;
+  max-width: 20vw;
+}
+
+.bio a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.resume {
+  position: relative;
+  scroll-snap-align: start;
+  padding: 2% 5%;
+  height: calc(100vh - 8em);
+  /* background-color: #03725B; */
+  z-index: 5;
+}
+
+.pdf {
+  height: 70vh;
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.pdf.active {
+  opacity: 1;
+}
+
+.portfolio {
+  position: relative;
+  /* margin-top: -1em; */
+  scroll-snap-align: start;
+  /* background-color: #272466; */
+  width: 100%;
+  overflow-x: hidden;
+  height: calc(100vh - 10em);
+  padding: 2% 5%;
+  z-index: 5;
+}
+.portfolioIcons {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.portfolioIcons a {
+  margin: 10px;
+  /* padding: 30px 50px; */
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  color: #fff;
+  transition: all 1s ease;
+}
+.portfolioIcons a:hover {
+  aspect-ratio: 1;
+  border: 3px solid #2ff8c9;
+  border-radius: 100%;
+  color: #2ff8c9;
+}
+
+/*Small screen sizes*/
+@media screen and (max-width: 885px) {
   .pageTitle {
-    animation: fade-left 1s ease;
-    transition: all .5s linear;
-    float: left;
-    margin: 0;
-    left: 40px;
-    position: absolute;			
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5vw;
+    padding-top: 5vh;
+    width: 80%;
+    font-size: 15vw;
   }
   .pageSubtitle {
-    animation: fade-left 1s ease;
-    transition: all .5s linear;
-    float: left;
-    margin: 0;
-    left: 40px;
-    position: absolute;			
-    box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
-    font: Inter, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    line-height: 1.7;
-    /* text-shadow: 5px 5px 5px #333249; */
+    left: 5vw;
+    top: 35vh;
+    width: 60%;
+    font-size: 24px;
+    columns: 1;
   }
-		
-  .headerImage{
-    animation: fade-right 1s ease;
-    transition: all .5s linear;
-    float: right;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: 3;
-    filter: drop-shadow(5px 5px 5px #333249)
+  .headerImage {
+    max-width: 85vw;
+    max-height: 70vh;
   }
-  .backgroundImage{
-    width: 100%;
-    position:absolute;
-    z-index: 0;
-    opacity: 0.5;
-    bottom: 0;
-    left: 0;
-    animation: fade-in 2s ease
-  }
-  .backgroundImage2{
-    width: 100%;
-    position:absolute;
-    z-index: 0;
-    opacity: 0.2;
-    bottom: 20%;
-    left: 0;
-  }
-
-  .active{
+  .bio {
     display: block;
-    transform: translateX(0);
   }
-  .bio{
-    position: relative;
-    padding: 2% 5%;
-    gap: 2%;
-    display: flex;
-    /* background-color: #272466; */
-    min-height: calc(100vh - 8em);
-    width: 100%;
-    max-height: fit-content;
-    scroll-snap-align: start;
-    z-index: 1;
+  .biotext {
+    margin-top: 0;
   }
-  .biotext{
-    /* animation: fade-right 1s ease; */
-    margin-top: 10vh;
-    opacity: 0;
-    transition: opacity 1s ease-in;
+  .bio p {
+    font-size: 14px;
   }
-  .bio p{
-    color: #fff;
+  .resume {
+    padding-left: 0;
   }
-  .biotext.active{
-    opacity: 1;
+  .resume h2 {
+    padding-left: 1em;
   }
-  .bioimg{
-    margin-top: 5vh;
-    max-height: 60%;
-    max-width: 20vw;
+  .bio img {
+    display: none;
   }
-
-  .bio a{
-    color: white;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-  .resume{
-    position: relative;
-    scroll-snap-align: start;
-    padding: 2% 5%;
-    height: calc(100vh - 8em);
-    /* background-color: #03725B; */
-    z-index: 5;
-  }
-
-  .pdf{
+  .pdf {
+    width: 100vw;
     height: 70vh;
-    opacity: 1;
-    transition: opacity 1s ease-in;
+  }
+  .portfolioIcons a {
+    width: 150px;
+    height: 150px;
+  }
+  .portfolioIcons img {
+    max-width: 80px;
+    max-height: 60px;
+  }
+}
+/*mid-sized screens*/
+@media screen and (min-width: 886px) and (max-width: 1170px) {
+  .pageTitle {
+    padding-left: 5vw;
+    padding-top: 5vh;
+    width: 75%;
+    font-size: 14vw;
+  }
+  .pageSubtitle {
+    top: 50vh;
+    left: 10vw;
+    width: 60%;
+    font-size: 30px;
+    columns: 1;
+  }
+  .headerImage {
+    max-width: 50vw;
+    max-height: 80vh;
+  }
+  .pdf {
+    width: 80%;
+    opacity: 0;
+    margin-left: 10%;
+  }
+  .portfolioIcons a {
+    width: 200px;
+    height: 200px;
+  }
+  .portfolioIcons img {
+    max-width: 100px;
+    max-height: 80px;
+  }
+}
+
+/*Upper-mid screen sizes*/
+@media screen and (min-width: 1171px) and (max-width: 1500px) {
+  .pageTitle {
+    padding-left: 5vw;
+    padding-top: 5vh;
+    width: 70%;
+  }
+  .pageSubtitle {
+    left: 8vw;
+    top: 60vh;
+    width: 70%;
+    font-size: 34px;
+    columns: 2;
+  }
+  .headerImage {
+    max-width: 40vw;
+    max-height: 80vh;
+  }
+  .pdf {
+    width: 70%;
+    opacity: 0;
+    margin-left: 15%;
+  }
+  .portfolioIcons a {
+    width: 250px;
+    height: 250px;
+  }
+  .portfolioIcons img {
+    max-width: 120px;
+    max-height: 90px;
+  }
+}
+
+/*Large screen sizes*/
+@media screen and (min-width: 1501px) {
+  .pageTitle {
+    padding-left: 5vw;
+    padding-top: 5vh;
+    width: 60%;
+    font-size: calc(min(12vw, 25vh));
+  }
+  .pageSubtitle {
+    left: 8vw;
+    top: 65vh;
+    width: 72%;
+    font-size: 40px;
+    columns: 2;
+  }
+  .headerImage {
+    max-width: 40vw;
+    max-height: 80vh;
+  }
+  .pdf {
+    opacity: 0;
+    width: 60%;
+    margin-left: 20%;
   }
 
-  .pdf.active{
-    opacity: 1;
-  }
-
-  .portfolio{
-    position: relative;
-    /* margin-top: -1em; */
-    scroll-snap-align: start;
-    /* background-color: #272466; */
-    width: 100%;
-    overflow-x: hidden;
-    height: calc(100vh - 10em);
-    padding: 2% 5%;
-    z-index: 5;
-
-  }
-  .portfolioIcons{
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-    width: 100%;
-    flex-wrap: wrap;
-    
-  }
-  .portfolioIcons a{
-    margin: 10px;
-    /* padding: 30px 50px; */
+  .portfolioIcons a {
     width: 300px;
     height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1;
-    border: 3px solid #fff;
-    border-radius: 100%;
-    color: #fff;
-    transition: all 1s ease;
   }
-  .portfolioIcons a:hover{
-    aspect-ratio: 1;
-    border: 3px solid #2FF8C9;
-    border-radius: 100%;
-    color: #2FF8C9;
+  .portfolioIcons img {
+    max-width: 150px;
+    max-height: 120px;
   }
+}
 
-
-  /*Small screen sizes*/
-  @media screen and (max-width: 885px){
-    .pageTitle{
-      padding-left: 5vw;
-      padding-top: 5vh;
-      width: 80%;
-      font-size: 15vw;
-    }
-    .pageSubtitle{
-      left: 5vw;
-      top: 35vh;
-      width: 60%;
-      font-size: 24px;
-      columns: 1;
-    }
-    .headerImage{
-      max-width: 85vw;
-      max-height: 70vh;
-    }
-    .bio{
-      display: block;
-    }
-    .biotext{
-      margin-top: 0;
-    }
-    .bio p{
-      font-size: 14px;
-    }
-    .resume{
-      padding-left: 0;
-    }
-    .resume h2{
-      padding-left: 1em;
-    }
-    .bio img{
-      display: none;
-    }
-    .pdf{
-      width: 100vw;
-      height: 70vh;
-    }
-    .portfolioIcons a{
-      width: 150px;
-      height: 150px;
-    }
-    .portfolioIcons img{
-      max-width: 80px;
-      max-height: 60px;
-    }
+@media screen and (max-height: 600px) {
+  .pageSubtitle {
+    display: none;
   }
-  /*mid-sized screens*/
-  @media screen and (min-width: 886px) and (max-width: 1170px) {
-    .pageTitle{
-      padding-left: 5vw;
-      padding-top: 5vh;
-      width: 75%;
-      font-size: 14vw;
-    }
-    .pageSubtitle{
-      top: 50vh;
-      left: 10vw;
-      width: 60%;
-      font-size: 30px;
-      columns: 1;
-    }
-    .headerImage{
-      max-width: 50vw;
-      max-height: 80vh;
-    }
-    .pdf{
-      width: 80%;
-      opacity: 0;
-      margin-left: 10%;
-    }
-    .portfolioIcons a{
-      width: 200px;
-      height: 200px;
-    }
-    .portfolioIcons img{
-      max-width: 100px;
-      max-height: 80px;
-    }
-  }
-
-  /*Upper-mid screen sizes*/
-  @media screen and (min-width: 1171px) and (max-width: 1500px){
-    .pageTitle{
-      padding-left: 5vw;
-      padding-top: 5vh;
-      width: 70%;
-    }
-    .pageSubtitle{
-      left: 8vw;
-      top: 60vh;
-      width: 70%;
-      font-size: 34px;
-      columns: 2;
-    }
-    .headerImage{
-      max-width: 40vw;
-      max-height: 80vh;
-    }
-    .pdf{
-      width: 70%;
-      opacity: 0;
-      margin-left: 15%;
-    }
-    .portfolioIcons a{
-      width: 250px;
-      height: 250px;
-    }
-    .portfolioIcons img{
-      max-width: 120px;
-      max-height: 90px;
-    }
-  }
-
-  /*Large screen sizes*/
-  @media screen and (min-width: 1501px){
-    .pageTitle{
-      padding-left: 5vw;
-      padding-top: 5vh;
-      width: 60%;
-      font-size: calc(min(12vw, 25vh));
-    }
-    .pageSubtitle{
-      left: 8vw;
-      top: 65vh;
-      width: 72%;
-      font-size: 40px;
-      columns: 2;
-    }
-    .headerImage{
-      max-width: 40vw;
-      max-height: 80vh;
-    }
-    .pdf{
-      opacity: 0;
-      width: 60%;
-      margin-left: 20%;
-    }
-
-    .portfolioIcons a{
-      width: 300px;
-      height: 300px;
-    }
-    .portfolioIcons img{
-      max-width: 150px;
-      max-height: 120px;
-    }
-  }
-
-  @media screen and (max-height: 600px) {
-    .pageSubtitle{
-      display: none;
-    }
-
-  }
+}

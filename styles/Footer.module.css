@@ -1,28 +1,28 @@
 /*Footer Styles*/
 
-.footer{
+.footer {
   /* background-color: #545454; */
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-  height: 2em; 
+  height: 2em;
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.footer ul{
+.footer ul {
   display: flex;
   justify-content: center;
 }
 
-.copyright{
+.copyright {
   text-align: center;
   font-family: Inter, Arial, Helvetica, sans-serif;
   padding: 12px;
-  color:#fff;
+  color: #fff;
   /* background-color: #03725B; */
 }
 
-.footer li a{
-font-size: 14px;
+.footer li a {
+  font-size: 14px;
 }
