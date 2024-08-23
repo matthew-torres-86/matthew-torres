@@ -154,19 +154,12 @@ export default function Home() {
           </div>
           <div className={styles.resume}>
             <h2>Resume</h2>
-            <object
-              className={styles.pdf}
-              data="Matthew Torres Resume.pdf#view=FitW"
-              type="application/pdf"
-              width="100%"
-              height="100%"
-            >
               <embed
+                className={styles.pdf}
                 src="https://drive.google.com/file/d/1tXmrqTV1ngvva86c96wv1DGi3b4hQhAq/preview?usp=sharing"
                 width="100%"
-                height="600px"
+                height="500px"
               />
-            </object>
           </div>
           <div className={styles.portfolio}>
             <h2>View Portfolio</h2>

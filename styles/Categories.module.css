@@ -37,7 +37,7 @@
   text-decoration: none;
   position: absolute;
   z-index: 3;
-  /* padding: 30px; */
+  padding: 10px;
   bottom: 0;
   margin: 0;
   transition: opacity 0.5s ease;
@@ -87,6 +87,7 @@
     width: 50vw;
   }
   .card h3 {
+    font-size: 18px;
     padding: 10px;
   }
   .card p {
@@ -100,6 +101,10 @@
   }
   .card {
     height: 25vh;
+  }
+  .card h3 {
+    font-size: 18px;
+    padding: 20px;
   }
   .card p {
     font-size: 12px;
@@ -115,6 +120,10 @@
   .card {
     height: 30vh;
   }
+  .card h3 {
+    font-size: 20px;
+    padding: 24px;
+  }
   .card p {
     font-size: 13px;
     padding: 30px;
@@ -129,6 +138,10 @@
   .card {
     height: 20em;
     /* width: 35em; */
+  }
+  .card h3 {
+    font-size: 24px;
+    padding: 30px;
   }
   .card p {
     font-size: 15px;
