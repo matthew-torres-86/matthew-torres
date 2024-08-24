@@ -4,6 +4,7 @@ import Navigation from "../components/navigation";
 import { useState, useEffect } from "react";
 import Categories from "../components/categories";
 import Footer from "../components/footer";
+import Statistics from "../components/statistics";
 
 const BLUE = "#272466";
 const GREEN = "#03725B";
@@ -31,15 +32,21 @@ const data = [
       "Matthew has served as an organist at the Congregational Church of Grafton, UCC., the Baptist Church of Grafton, and Tufts' protestant chaplaincy. Click to view videos of Matthew's Organ performances.",
   },
 ];
+const stats = [
+  {stat: "10 Years", title: "Piano Performance Experience"},
+  {stat: "7", title: "Musical Theater Credits"},
+  {stat: "50+", title: "Performances"},
+  {stat: "2000+", title: "Audience Members Reached"},
+];
 
 export default function Home() {
   const [hydrated, setHydrated] = useState(false);
   const [color, setColor] = useState(GREEN);
   const [catsReveal, setCatsReveal] = useState(false);
-
+  const [statsReveal, setStatsReveal] = useState(false);
   function reveal() {
     var reveals = document.querySelectorAll(
-      `.${styles.backgroundLayer}, .${styles.projectsOverview}`,
+      `.${styles.backgroundLayer}, .${styles.stats}, .${styles.projectsOverview}`,
     );
     console.log(reveals);
     for (var i = 0; i < reveals.length; i++) {
@@ -51,17 +58,20 @@ export default function Home() {
         elementTop < windowHeight - elementVisible &&
         elementBottom >= windowHeight - elementVisible
       ) {
-        if (i == 0) {
-          setColor(GREEN);
-        } else {
+        if (i == 1) {
           setColor(BLUE);
+        } else {
+          setColor(GREEN);
         }
         if (i == 1) {
+          setStatsReveal(true);
+        }
+        if (i == 2) {
           setCatsReveal(true);
         }
       }
+      }
     }
-  }
 
   useEffect(() => {
     setHydrated(true);
@@ -99,11 +109,15 @@ export default function Home() {
               <li>Pianist</li>
             </ul>
           </div>
+          <div className={styles.stats}>
+            <h2>Experience at a Glance</h2>
+            <Statistics data={stats} reveal={statsReveal}></Statistics>
+          </div>
           <div className={styles.projectsOverview}>
             <h2>Projects</h2>
             <Categories data={data} reveal={catsReveal}></Categories>
           </div>
-          <Footer color={BLUE}></Footer>
+          <Footer color={GREEN}></Footer>
         </div>
       </body>
     </>

@@ -117,7 +117,7 @@
   border: none;
 }
 
-.projectsOverview {
+.projectsOverview, .stats {
   /* margin-top: -1em; */
   scroll-snap-align: start;
   /* background-color: #272466; */

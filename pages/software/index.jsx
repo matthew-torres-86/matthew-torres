@@ -4,6 +4,7 @@ import Navigation from "../components/navigation";
 import Categories from "../components/categories";
 import { useState, useEffect } from "react";
 import Footer from "../components/footer";
+import Statistics from "../components/statistics";
 
 const data = [
   {
@@ -28,6 +29,13 @@ const data = [
       "At Tufts, Matthew took multiple courses in C and C++. Some of the work from these courses is on display here!",
   },
 ];
+const stats = [
+  {stat: "2 Years", title: "IT Experience"},
+  {stat: "9", title: "Programming Languages"},
+  {stat: "2000+", title: "End-users Served"},
+  {stat: "30+", title: "Successful Projects"},
+  {stat: "370+", title: "Github Contributions This Year"}
+];
 
 const BLUE = "#272466";
 const GREEN = "#03725B";
@@ -36,9 +44,10 @@ export default function Software() {
   const [hydrated, setHydrated] = useState(false);
   const [color, setColor] = useState(GREEN);
   const [catsReveal, setCatsReveal] = useState(false);
+  const [statsReveal, setStatsReveal] = useState(false);
   function reveal() {
     var reveals = document.querySelectorAll(
-      `.${styles.backgroundLayer}, .${styles.projectsOverview}`,
+      `.${styles.backgroundLayer}, .${styles.stats}, .${styles.projectsOverview}`,
     );
     console.log(reveals);
     for (var i = 0; i < reveals.length; i++) {
@@ -50,12 +59,15 @@ export default function Software() {
         elementTop < windowHeight - elementVisible &&
         elementBottom >= windowHeight - elementVisible
       ) {
-        if (i == 0) {
-          setColor(GREEN);
-        } else {
+        if (i == 1) {
           setColor(BLUE);
+        } else {
+          setColor(GREEN);
         }
         if (i == 1) {
+          setStatsReveal(true);
+        }
+        if (i == 2) {
           setCatsReveal(true);
         }
       }
@@ -101,12 +113,17 @@ export default function Software() {
               <li>C/C++</li>
             </ul>
           </div>
+          <div className={styles.stats}>
+            <h2>Experience at a Glance</h2>
+            <Statistics data={stats} reveal={statsReveal}></Statistics>
+          </div>
           <div className={styles.projectsOverview}>
             <h2>Projects</h2>
             <Categories data={data} reveal={catsReveal}></Categories>
           </div>
           <Footer></Footer>
         </div>
+        
       </body>
     </>
   );

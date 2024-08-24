@@ -125,6 +125,7 @@
 }
 .biotext {
   /* animation: fade-right 1s ease; */
+  align-self: center;
   margin-top: 10vh;
   opacity: 0;
   transition: opacity 1s ease-in;
@@ -137,7 +138,7 @@
 }
 .bioimg {
   margin-top: 5vh;
-  max-height: 60%;
+  max-height: 60vh;
   max-width: 20vw;
 }
 

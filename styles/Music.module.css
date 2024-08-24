@@ -112,7 +112,7 @@
   transform: translateX(0);
 }
 
-.projectsOverview {
+.projectsOverview, .stats {
   scroll-snap-align: start;
   height: calc(100vh - 10em);
   /* background-color: #272466; */
@@ -121,7 +121,7 @@
   position: relative;
   z-index: 5;
 }
-.projectsOverview h2 {
+.projectsOverview h2, .stats h2 {
   margin-left: 2%;
 }
 

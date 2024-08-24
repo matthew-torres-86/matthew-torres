@@ -4,10 +4,12 @@
   /* background-color: #545454; */
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
-  height: 2em;
+  height: 3em;
   width: 100%;
   display: flex;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer ul {
@@ -40,6 +42,6 @@
     /* background-color: #545454; */
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
   }
 }
