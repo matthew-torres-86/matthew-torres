@@ -69,7 +69,7 @@ const data = [
       "I do not own the rights to this song. This production was in partnership with MTI, with video for portfolio purposes only.",
     date: "April 2023",
     org: "Tufts' Torn Ticket II",
-    descr: "This fantastic production...",
+    descr: "This production of Little Women was put on with a 3 week timeline, and required efficient rehearsals. This is a clip from the sitzprobe, the first time actors and the band join together with Matthew at the helm",
     thumbnail: "/LittleWomen.jpeg",
   },
   {
@@ -79,6 +79,7 @@ const data = [
     caption:
       "I do not own the rights to this song. This production was in partnership with MTI, with video for portfolio purposes only.",
     date: "April 2023",
+    descr: "This production of Little Women was put on with a 3 week timeline, and required efficient rehearsals. This is a clip from the sitzprobe, the first time actors and the band join together with Matthew at the helm",
     org: "Tufts' Torn Ticket II",
     descr: "Coming Soon",
   },
