@@ -15,6 +15,7 @@ const data = [
     thumbnail: "/KMB.png",
     descr:
       "One home page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites.",
+    caption: "iFrame is not an accurate representation of the site's responsiveness. To view the full site, go to https://keep-mass-beautiful.vercel.app"
   },
   {
     name: "KeepMassBeautiful",
@@ -24,6 +25,7 @@ const data = [
     org: "Jumbocode",
     descr:
       "One about page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites.",
+    caption: "iFrame is not an accurate representation of the site's responsiveness. To view the full site, go to https://keep-mass-beautiful.vercel.app"
   },
   {
     name: "KeepMassBeautiful",
@@ -33,6 +35,7 @@ const data = [
     org: "Jumbocode",
     descr:
       "One contact page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites.",
+    caption: "iFrame is not an accurate representation of the site's responsiveness. To view the full site, go to https://keep-mass-beautiful.vercel.app"
   },
   {
     name: "KeepMassBeautiful",
@@ -42,6 +45,18 @@ const data = [
     org: "Jumbocode",
     descr:
       "One events page of the KeepMassBeautiful project, which allows chapter leaders to create, modify, and host their own public-facing promotional sites.",
+    caption: "iFrame is not an accurate representation of the site's responsiveness. To view the full site, go to https://keep-mass-beautiful.vercel.app"
+  },
+  {
+    name: "Troop 107 Website",
+    title: "Home Page",
+    site: "https://graftontroop107.wordpress.com/",
+    date: "June 2018 - August 2018",
+    org: "Grafton Boy Scout Troop 107",
+    thumbnail: "/troop107.png",
+    descr:
+      "As senior patrol leader for Boy Scout Troop 107, Matthew led a series of improvement initiatives that included a new Wordpress website, which he designed and built while in High School.",
+    caption: "iFrame is not an accurate representation of the site's responsiveness. To view the full site, go to https://graftontroop107.wordpress.com"
   },
   {
     name: "Matthew Torres Portfolio",
@@ -52,7 +67,9 @@ const data = [
     thumbnail: "/portfoliosite.png",
     descr:
       "Look familiar? This portfolio site was a major personal project, with extensive care taken to provide the best user experience. It features scroll-based and click-based animations, a cohesive look and feel, and many interactive displays for Matthew's software and music projects.",
+      caption: "iFrame is not an accurate representation of the site's responsiveness. To view the full site, go to https://keep-mass-beautiful.vercel.app"
   },
+  
 ];
 const BLUE = "#272466";
 
