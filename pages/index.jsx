@@ -4,6 +4,9 @@ import Navigation from "./components/navigation";
 import { useState, useEffect } from "react";
 import Footer from "./components/footer";
 import Categories from "./components/categories";
+import Image from "next/image";
+import matthew from '../public/Matthew Torres.png'
+import textImg from '../public/Matthew-Torres-Text.png'
 
 const BIO = (
   <div className={styles.biotext}>
@@ -130,11 +133,13 @@ export default function Home() {
           }}
         >
           <div className={styles.backgroundLayer}>
-            <img className={styles.headerImage} src="Matthew Torres.png" />
-            <img
+            <Image 
+              className={styles.headerImage}
+              src={matthew} />
+            <Image
               className={styles.pageTitle}
-              src="Matthew-Torres-Text.png"
-            ></img>
+              src={textImg}
+            />
             <ul className={styles.pageSubtitle}>
               <li>Software Developer</li>
               <li>Musican</li>
