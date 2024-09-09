@@ -135,10 +135,14 @@ export default function Home() {
           <div className={styles.backgroundLayer}>
             <Image 
               className={styles.headerImage}
-              src={matthew} />
+              src={matthew} 
+              placeholder="blur"
+              />
+              
             <Image
               className={styles.pageTitle}
               src={textImg}
+              placeholder="blur"
             />
             <ul className={styles.pageSubtitle}>
               <li>Software Developer</li>

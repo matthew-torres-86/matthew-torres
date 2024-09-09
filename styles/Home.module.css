@@ -281,6 +281,7 @@
   .pdf {
     width: 80%;
     opacity: 0;
+    height: 60vh;
     margin-left: 10%;
   }
   .portfolioIcons a {
@@ -315,6 +316,7 @@
   }
   .pdf {
     width: 70%;
+    height: 60vh;
     opacity: 0;
     margin-left: 15%;
   }
@@ -335,7 +337,6 @@
     padding-top: 5vh;
     width: 60vw;
     height: auto;
-    font-size: calc(min(12vw, 25vh));
   }
   .pageSubtitle {
     left: 8vw;
@@ -351,6 +352,7 @@
   .pdf {
     opacity: 0;
     width: 60%;
+    height: 60vh;
     margin-left: 20%;
   }
 

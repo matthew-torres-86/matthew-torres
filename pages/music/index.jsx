@@ -5,6 +5,9 @@ import { useState, useEffect } from "react";
 import Categories from "../components/categories";
 import Footer from "../components/footer";
 import Statistics from "../components/statistics";
+import Image from "next/image";
+import music from "../../public/music.png"
+import musicText from "../../public/Musician-Text.png"
 
 const BLUE = "#272466";
 const GREEN = "#03725B";
@@ -101,8 +104,8 @@ export default function Home() {
           }}
         >
           <div className={styles.backgroundLayer}>
-            <img className={styles.headerImage} src="music.png" />
-            <img className={styles.pageTitle} src="Musician-Text.png"></img>
+            <Image className={styles.headerImage} src={music} placeholder="blur"/>
+            <Image className={styles.pageTitle} src={musicText} placeholder="blur" priority/>
             <ul className={styles.pageSubtitle}>
               <li>Music Director</li>
               <li>Organist</li>

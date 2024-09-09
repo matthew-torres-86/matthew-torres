@@ -5,6 +5,9 @@ import Categories from "../components/categories";
 import { useState, useEffect } from "react";
 import Footer from "../components/footer";
 import Statistics from "../components/statistics";
+import Image from "next/image";
+import cs from "../../public/cs.png"
+import csText from "../../public/Software-Developer-Text.png"
 
 const data = [
   {
@@ -100,11 +103,12 @@ export default function Software() {
           onScroll={reveal}
         >
           <div className={styles.backgroundLayer}>
-            <img className={styles.headerImage} src="cs.png" />
-            <img
+            <Image className={styles.headerImage} src={cs} placeholder="blur"/>
+            <Image
               className={styles.pageTitle}
-              src="Software-Developer-Text.png"
-            ></img>
+              src={csText}
+              placeholder="blur"
+            />
             <ul className={styles.pageSubtitle}>
               <li>HTML/CSS</li>
               <li>Python</li>
