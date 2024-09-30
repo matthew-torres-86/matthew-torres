@@ -58,17 +58,6 @@ const data = [
       "As senior patrol leader for Boy Scout Troop 107, Matthew led a series of improvement initiatives that included a new Wordpress website, which he designed and built while in High School.",
     caption: "iFrame is not an accurate representation of the site's responsiveness. To view the full site, go to https://graftontroop107.wordpress.com"
   },
-  {
-    name: "Matthew Torres Portfolio",
-    title: "Home Page",
-    site: "https://matthew-torres.vercel.app/",
-    date: "June 2024 - July 2024",
-    org: "Personal",
-    thumbnail: "/portfoliosite.png",
-    descr:
-      "Look familiar? This portfolio site was a major personal project, with extensive care taken to provide the best user experience. It features scroll-based and click-based animations, a cohesive look and feel, and many interactive displays for Matthew's software and music projects.",
-      caption: "iFrame is not an accurate representation of the site's responsiveness. To view the full site, go to https://keep-mass-beautiful.vercel.app"
-  },
   
 ];
 const BLUE = "#272466";
