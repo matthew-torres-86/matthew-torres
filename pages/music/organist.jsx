@@ -5,15 +5,13 @@ import { useState, useEffect } from "react";
 import Gallery from "../components/gallery";
 import Footer from "../components/footer";
 
-const data =
-[
-  {name:"Coming Soon", title: "Organist Videos Coming Soon"},
+const data = [{ name: "Coming Soon", title: "Organist Videos Coming Soon" }];
 
-]
+const BLUE = "#272466";
 
 export default function Organist() {
   const [hydrated, setHydrated] = useState(false);
-  
+
   useEffect(() => {
     setHydrated(true);
   }, []);
@@ -30,13 +28,13 @@ export default function Organist() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navigation></Navigation>
-    <body>
-      <div className={styles.projectsDetail}>
-        <Gallery data={data}></Gallery>
-      </div>
-      <Footer></Footer>
-    </body>
+      <Navigation color={BLUE}></Navigation>
+      <body>
+        <div className={styles.projectsDetail}>
+          <Gallery data={data}></Gallery>
+        </div>
+        <Footer></Footer>
+      </body>
     </>
   );
 }
