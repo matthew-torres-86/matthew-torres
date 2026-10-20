@@ -12,6 +12,7 @@
   "dependencies": {
     "next": "14.2.2",
     "nextjs-progressbar": "^0.0.16",
+    "node": "^26.12.0",
     "prettier": "^3.3.3",
     "react": "^18",
     "react-code-blocks": "^0.1.6",
