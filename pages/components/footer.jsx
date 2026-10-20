@@ -3,7 +3,7 @@ export default function Footer({ color }) {
   return (
     <footer>
       <div className={styles.copyright} style={{ backgroundColor: color }}>
-        Built from scratch using Next.js. &copy; Matthew Torres. 2024
+        Built before claude. &copy; Matthew Torres. 2026
       </div>
     </footer>
   );

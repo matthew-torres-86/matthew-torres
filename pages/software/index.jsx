@@ -33,11 +33,11 @@ const data = [
   },
 ];
 const stats = [
-  {stat: "2 Years", title: "IT Experience"},
+  {stat: "4 Years", title: "IT Experience"},
   {stat: "9", title: "Programming Languages"},
-  {stat: "2000+", title: "End-users Served"},
-  {stat: "30+", title: "Successful Projects"},
-  {stat: "370+", title: "Github Contributions This Year"}
+  {stat: "3000+", title: "End-users Served"},
+  {stat: "50+", title: "Successful Projects"},
+  {stat: "120+", title: "Github Contributions This Year"}
 ];
 
 const BLUE = "#272466";

@@ -7,6 +7,28 @@ import Footer from "../components/footer";
 
 const data = [
   {
+    name: "Integrated Automation Repository",
+    title: "Integrated-Automation",
+    date: "Ongoing",
+    org: "Dartmouth College",
+    descr: "A mega-repo of integrations, packages, and scripts used to manage Integrated Automation applications at Dartmouth.",
+    caption:
+      "This project is proprietary and cannot be disclosed. For questions, please contact Matt",
+    thumbnail: "/dartmouth.jpg",
+    image: "/dartmouth.jpg"
+  },
+  {
+    name: "Utility Billing System",
+    title: "ubs.dartmouth.edu",
+    date: "December 2025",
+    org: "Dartmouth College",
+    descr: "A Python backend web application which calculates monthly utility usage for Dartmouth's 120+ buildings, and submits bills to the GL.",
+    caption:
+      "This project is proprietary and cannot be disclosed. For questions, please contact Matt",
+    thumbnail: "/ubs.png",
+    image: "/ubs.png"
+  },
+  {
     name: "Network Sniffer",
     title: "Alert.py",
     descr:
@@ -25,6 +47,7 @@ const data = [
     descr:
       "This project interfaces Draper's enterprise tools, and process employee ID photos to meet the required image specifications of each tool",
     thumbnail: "/draper.jpeg",
+    image: "/draper-labs.jpg"
   },
   {
     name: "PropertyScan",
@@ -35,6 +58,7 @@ const data = [
     org: "Draper Inc.",
     descr:
       "This project processes data from handheld scanners to help maintain Draper's Asset Management Records",
+    image: "/draper-labs.jpg"
   },
 ];
 

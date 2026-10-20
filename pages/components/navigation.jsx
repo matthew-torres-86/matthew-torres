@@ -61,9 +61,9 @@ export default function Navigation({ active, color }) {
                 transition: "background-color 0.5s ease",
               }}
             >
+              <a href="/software/python">Python</a>
               <a href="/software/web-programming">Web Programming</a>
               <a href="/software/c">C Languages</a>
-              <a href="/software/python">Python</a>
             </div>
           </li>
         </ul>
@@ -121,15 +121,16 @@ export default function Navigation({ active, color }) {
               }}
             >
               <a href="/software">SOFTWARE DEVELOPER</a>
+              <a href="/software/python" className={styles.sub}>
+                Python
+              </a>
               <a href="/software/web-programming" className={styles.sub}>
                 Web Programming
               </a>
               <a href="/software/c" className={styles.sub}>
                 C Languages
               </a>
-              <a href="/software/python" className={styles.sub}>
-                Python
-              </a>
+
               <a href="/music">MUSICIAN</a>
               <a href="/music/music-director" className={styles.sub}>
                 Music Director

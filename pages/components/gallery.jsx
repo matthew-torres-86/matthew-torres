@@ -106,6 +106,10 @@ export default function Gallery({ data }) {
                 <iframe src={selectedCard.site}></iframe>
               </div>
             )}
+
+            {selectedCard.image && (
+              <img src = {selectedCard.image}></img>
+            )}
           </div>
 
           <div className={isPlaying ? styles.infoMinimized : styles.info}>

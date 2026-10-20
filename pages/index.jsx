@@ -16,12 +16,20 @@ const BIO = (
       <a href="https://tufts.edu" target="_blank">
         Tufts University
       </a>
-      . As a student in the{" "}
+      . In his current role as a Data Engineer at Dartmouth College, he designs and builds
+      software solutions that help operations teams manage the campus more efficiently. 
+      He builds analytics and fault detection tools to help surface operating issues,
+      enabling faster response times and saving energy. Data he manages informs 
+      Dartmouth's <a href="https://www.sustainability.dartmouth.edu/energy">Energy Program</a> as 
+      The College strives toward carbon neutrality by 2050.
+      </p>
+      <p>
+      Prior to his role at Dartmouth, Matthew was a student in the{" "}
       <a href="https://engineering.tufts.edu/cs/" target="_blank">
         Tufts Department of Computer Science
       </a>
-      , he served as an undergraduate teaching assistant for Web Programming
-      (CS20), where he helped hundreds of students each year learn frontend and
+      , where he served as an undergraduate teaching assistant for Web Programming
+      (CS20), helping hundreds of students each year learn frontend and
       backend development techniques as well as simple database infrastructure.
       He went on to become a tech lead for{" "}
       <a href="https://jumbocode.org/" target="_blank">
